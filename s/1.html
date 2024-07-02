@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../dist/images/icon.png"/>
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <script src="../dist/js/scrollreveal.min.js"></script>
+    <title>Al-Fatihah | Quran-Web3.NFT</title>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+
+        <main>
+            <ul id="top" class="w3-navbar w3-black">
+                <li><a style="font-size: 24px;cursor: default;">Al-Fatihah</a></li>
+                <li style="float:right;"><a class="myBtn_multi" style="cursor:pointer;" data-verse="0:0">🅘 Surah Info</a></li>
+            </ul>
+            <ul class="w3-top w3-navbar w3-xlarge w3-black">
+                <li>
+                    <div id="page-container"></div>
+                </li>
+                <li>
+                    <a style="font-size: 34px;" href="../">Quran Web3</a>
+                </li>
+                <li style="float:right;">
+                    <a style="cursor: pointer;" id="menuIcon"><i class="fa fa-cog menu-icon"></i></a>
+                </li>
+                <li style="float:right;">
+                    <div style="cursor: pointer;" id="toggle-container"></div>
+                </li>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </ul>
+            <div class="menu-container unselectable" id="menuContainer">
+                <div class="menu-item" onclick="toggleTheme()"><div class="lights-toggle" style="margin-left: 20px;padding-top: 10px;"><input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch"><label for="lights-toggle" class="text-xs"><span><span></span></span>&nbsp;</label></div>
+                <script src="../dist/js/themecolor.js"></script>
+            </div>
+                <label for="tajweedToggle"><input class="w3-check" type="checkbox" id="tajweedToggle" style="cursor: pointer;" onchange="toggleTajweed()"/><span style="font-size: 18px;font-weight: bold;cursor: pointer;"> Tajweed</span></label>______________
+                <div class="menu-item">
+                    <div style="font-size: 20px;cursor: default;text-align: center;padding: 20px;font-weight: bold;">Font Size</div>
+                    <div class="font-size-container">
+                        <span class="w3-transparent cursor-pointer" style="font-size: 20px;" onclick="zoomOut()"><i class="fa-solid fa-circle-minus"></i></span>
+                        <span class="w3-transparent cursor-pointer" style="font-size: 28px;" onclick="resetSize()"><i class="fa-solid fa-rotate"></i></span>
+                        <span class="w3-transparent cursor-pointer" style="font-size: 32px;" onclick="zoomIn()"><i class="fa-solid fa-circle-plus"></i></span>
+                    </div>
+                </div>______________
+                <div class="menu-item" style="font-size: 20px;padding: 10px;font-weight: bold;" id="reciterIcon"><i class="fa-regular fa-user"></i> Reciter</div>
+            </div>    
+
+            <div class="container">
+        
+                    <h3 class="text-center frame" style="font-size: 50px;font-family: surah;">001surah</h3>
+
+                    <button onclick="toggleView('page')" id="pageButton" class="button active cursor-pointer">Translation</button>
+					<button class="button cursor-pointer" style="float: right;" onclick="toggleView('surah')" id="surahButton">Reading</button>
+
+                    <div class="modal modal_multi w3-animate-zoom" id="modal-0-0">
+                        <div class="modal-content w3-round-small">
+                            <span class="close1 close_multi">
+                                <div class="w3-blue">
+                                    <span style="float:left;cursor:default;padding:10px;"><i class="fa-solid fa-kaaba"></i> Al-Fatihah</span>
+                                    <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                    <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                    <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                </div>
+                            </span>
+                            <div class="container container-sm-bg">
+                                <div class="inner">
+                                    <div class="w3-content">
+                                        <h3 class="text-center" style="font-size: 30px;font-weight: bold;">About Surah Al-Fatihah</h3>
+                                        <center><b>7 ayahs revealed in Mecca</b></center><br />
+                                        <div class="site-div has-top-divider"></div>
+                                        <h3>The Meaning of Al-Fatihah and its Various Names</h3>
+                                        <p>This Surah is called</p>
+                                        <p>- Al-Fatihah, that is, the Opener of the Book, the Surah with which prayers are begun.</p>
+                                        <p>- It is also called, Umm Al-Kitab (the Mother of the Book), according to the majority of the scholars.</p>
+                                        <p>In an authentic Hadith recorded by At-Tirmidhi, who graded it Sahih, Abu Hurayrah said that the Messenger of Allah <strong style="color: rgb(95, 99, 104);">ﷺ </strong>said,</p>
+                                        <p>الْحَمْدُ للهِ رَبَ الْعَالَمِينَ أُمُّ الْقُرْآنِ وَأُمُّ الْكِتَابِ وَالسَّبْعُ الْمَثَانِي وَالْقُرْآنُ الْعَظِيمُ</p>
+                                        <p>Al-Hamdu lillahi Rabbil-`Alamin is the Mother of the Qur'an, the Mother of the Book, and the seven repeated Ayat of the Glorious Qur'an.It is also called Al-Hamd and As-Salah, because the Prophet ﷺ said that his Lord said,</p>
+                                        <p>قَسَمْتُ الصَّلَاةَ بَيْنِي وَبَيْنَ عَبْدِي نِصْفَيْنِ، فَإِذَا قَالَ الْعَبْدُ:الْحَمْدُ للهِ رَبِّ الْعَالَمِنَ، قَالَ اللهُ: حَمِدَنِي عَبْدِي</p>
+                                        <p>The prayer (i.e., Al-Fatihah) is divided into two halves between Me and My servants. When the servant says, `All praise is due to Allah, the Lord of existence,' Allah says, 'My servant has praised Me. Al-Fatihah was called the Salah, because reciting it is a condition for the correctness of Salah - the prayer. Al-Fatihah was also called Ash-Shifa' (the Cure).It is also called Ar-Ruqyah (remedy), since in the Sahih, there is the narration of Abu Sa`id telling the story of the Companion who used Al-Fatihah as a remedy for the tribal chief who was poisoned. Later, the Messenger of Allah ﷺ said to a Companion,</p>
+                                        <p>How did you know that it is a Ruqyah?Al-Fatihah was revealed in Makkah as Ibn Abbas, Qatadah and Abu Al-Aliyah stated.Allah said,</p>
+                                        <p>And indeed, We have bestowed upon you the seven Mathani (seven repeatedly recited verses), (i.e. Surah Al-Fatihah) (15:87). Allah knows best.</p>
+                                    </div>					
+                                </div>
+                            </div>										
+                            <div class="sticky-footer w3-blue">
+                                quran-web3.nft
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-div has-top-divider"></div>
+
+                    <div id="pageOption">
+
+                        <p class="search-box">
+                            <center>
+                                <input class="button" type="text" id="searchInput" style="cursor: text;" placeholder="Enter verse number">
+                                <button class="button active" style="cursor: pointer;" onclick="searchVerse()">JUMP</button>
+                            </center>
+                        </p>
+
+                        <div class="site-div has-top-divider"></div><br />
+
+                        <div id="1" data-id="1" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:1" style="font-size: 12px;cursor: default;">1:1</div></div>
+                                <div class="circle-container-inner" id="play-sa-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_sa" src="../dist/audio/saad_al_ghamdi/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_ar" src="../dist/audio/abdul_rahman_al_sudais/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_ab" src="../dist/audio/abu_bakr_al_shatri/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_ma" src="../dist/audio/maher_al_muaiqly/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_ss" src="../dist/audio/saud_al_shuraim/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_aa" src="../dist/audio/ahmad_al_ajmi/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001001"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001001_fa" src="../dist/audio/fares_abbad/001001.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001001_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:1" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-1">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ <small><sup> ١</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِ</span><small><sup> ١</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-1">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ <small><sup> ١</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِ</span><small><sup> ١</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Bismillah hir rahman nir raheem<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">奉至仁至慈的真主之名<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">अल्लाह के नाम से जो रहमान व रहीम है।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">En el nombre de Dios, el Compasivo con toda la creación, el Misericordioso con los creyentes.<br /></h4>
+                                <h4 class="translation french" style="display: none;">Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux.<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">আল্লাহর নাম নিয়ে (আরম্ভ করছি), (যিনি) রহমান (--পরম করুণাময়, যিনি অসীম করুণা ও দয়া বশতঃ বিশ্বজগতের সমস্ত সৃষ্টির সহাবস্থানের প্রয়োজনীয় সব ব্যবস্থা অগ্রিম করে রেখেছেন), (যিনি) রহীম (--অফুরন্ত ফলদাতা, যাঁর অপার করুণা ও দয়ার ফলে প্রত্যেকের ক্ষুদ্রতম শুভ-প্রচেষ্টাও বিপুলভাবে সাফল্যমণ্ডিত ও পুরস্কৃত হয়ে থাকে)।<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">Em nome de Deus, o Clemente, o Misericordioso.<br /></h4>
+                                <h4 class="translation russian" style="display: none;">С именем Аллаха Милостивого, Милосердного!<br /></h4>
+                                <h4 class="translation german" style="display: none;">Im Namen Allahs, des Allerbarmers, des Barmherzigen.<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">慈悲あまねく慈愛深きアッラーの御名において。<br /></h4>
+                                <h4 class="translation korean" style="display: none;">자비로우시고 자애로우신 하나님의 이름으로<br /></h4>
+                                <h4 class="translation english">In the name of Allah,<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> the Entirely Merciful, the Especially Merciful.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;²</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:1 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Allāh is a proper name belonging only to the one Almighty God, Creator and Sustainer of the heavens and the earth and all that is within them, the Eternal and Absolute, to whom alone all worship is due.
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:1 (2):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Ar-Raḥmān and ar-Raḥeem are two names of Allāh derived from the word "raḥmah" (mercy) . In Arabic grammar both are intensive forms of "merciful" (i.e., extremely merciful) . A complimentary and comprehensive meaning is intended by using both together. Raḥmān is used only to describe Allāh, while raḥeem might be used to describe a person as well. The Prophet (ﷺ) was described in the Qur’ān as raḥeem. Raḥmān is above the human level (i.e., intensely merciful) . Since one usually understands intensity to be something of short duration, Allāh describes Himself also as raḥeem (i.e., continually merciful) . Raḥmān also carries a wider meaning - merciful to all creation. Justice is a part of this mercy. Raḥeem includes the concept of speciality - especially and specifically merciful to the believers. Forgiveness is a part of this mercy. In addition, Raḥmān is adjectival, referring to an attribute of Allāh and is part of His essence. Raḥeem is verbal, indicating what He does: i.e., bestowing and implementing mercy.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+
+                        <div id="2" data-id="2" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:2" style="font-size: 12px;cursor: default;">1:2</div></div>
+                                <div class="circle-container-inner" id="play-sa-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_sa" src="../dist/audio/saad_al_ghamdi/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_ar" src="../dist/audio/abdul_rahman_al_sudais/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_ab" src="../dist/audio/abu_bakr_al_shatri/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_ma" src="../dist/audio/maher_al_muaiqly/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_ss" src="../dist/audio/saud_al_shuraim/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_aa" src="../dist/audio/ahmad_al_ajmi/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001002"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001002_fa" src="../dist/audio/fares_abbad/001002.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001002_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:2" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-2">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ <small><sup> ٢</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَۙ</span><small><sup> ٢</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-2">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ <small><sup> ٢</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَۙ</span><small><sup> ٢</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Alhamdu lillaahi Rabbil ‘aalameen<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">一切贊頌，全歸真主，全世界的主，<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">तारीफ़ अल्लाह ही के लिये है जो तमाम क़ायनात का रब है।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">Todas las alabanzas son para Dios, Señor de todo cuanto existe,<br /></h4>
+                                <h4 class="translation french" style="display: none;">Louange à Allah, Seigneur de l'univers.<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">সমস্ত প্রশংসা আল্লাহ্‌র প্রাপ্য, সমুদয় সৃষ্ট-জগতের রব্ব।<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">Louvado seja Deus, Senhor do Universo,<br /></h4>
+                                <h4 class="translation russian" style="display: none;">(Вся) хвала – (лишь одному) Аллаху, Господу миров [Господу всех творений],<br /></h4>
+                                <h4 class="translation german" style="display: none;">(Alles) Lob gehört Allah, dem Herrn der Welten,<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">万有の主，アッラーにこそ凡ての称讃あれ，<br /></h4>
+                                <h4 class="translation korean" style="display: none;">온 우주의 주님이신 하나님께찬미를 드리나이다<br /></h4>
+                                <h4 class="translation english">[All] praise is [due] to Allāh, Lord<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> of the worlds -<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:2 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />When referring to Allāh (subḥānahu wa taʿālā) , the Arabic term "rabb" (translated as "Lord") includes all of the following meanings: "owner, master, ruler, controller, sustainer, provider, guardian and caretaker."
+                                        </div>
+                                    </div>
+                                </h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+    
+                        <div id="3" data-id="3" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:3" style="font-size: 12px;cursor: default;">1:3</div></div>
+                                <div class="circle-container-inner" id="play-sa-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_sa" src="../dist/audio/saad_al_ghamdi/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_ar" src="../dist/audio/abdul_rahman_al_sudais/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_ab" src="../dist/audio/abu_bakr_al_shatri/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_ma" src="../dist/audio/maher_al_muaiqly/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_ss" src="../dist/audio/saud_al_shuraim/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_aa" src="../dist/audio/ahmad_al_ajmi/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001003"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001003_fa" src="../dist/audio/fares_abbad/001003.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001003_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:3" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-3">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ <small><sup> ٣</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِۙ</span><small><sup> ٣</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-3">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ <small><sup> ٣</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِۙ</span><small><sup> ٣</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Ar-Rahmaanir-Raheem<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">至仁至慈的主，<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">रहमान और रहीम है।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">el Compasivo, el Misericordioso.<br /></h4>
+                                <h4 class="translation french" style="display: none;">Le Tout Miséricordieux, le Très Miséricordieux,<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">রহমান, রহীম।<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">Clemente, o Misericordioso,<br /></h4>
+                                <h4 class="translation russian" style="display: none;">Милостивому (ко всем Своим творениям в этом мире), (и) Милосердному (только к верующим в День Суда),<br /></h4>
+                                <h4 class="translation german" style="display: none;">dem Allerbarmer, dem Barmherzigen,<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">慈悲あまねく慈愛深き御方，<br /></h4>
+                                <h4 class="translation korean" style="display: none;">그분은 자애로우시고 자비로 우시며<br /></h4>
+                                <h4 class="translation english">The Entirely Merciful, the Especially Merciful,<br /></h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+    
+                        <div id="4" data-id="4" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:4" style="font-size: 12px;cursor: default;">1:4</div></div>
+                                <div class="circle-container-inner" id="play-sa-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_sa" src="../dist/audio/saad_al_ghamdi/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_ar" src="../dist/audio/abdul_rahman_al_sudais/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_ab" src="../dist/audio/abu_bakr_al_shatri/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_ma" src="../dist/audio/maher_al_muaiqly/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_ss" src="../dist/audio/saud_al_shuraim/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_aa" src="../dist/audio/ahmad_al_ajmi/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001004"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001004_fa" src="../dist/audio/fares_abbad/001004.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001004_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:4" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-4">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">مَـٰلِكِ يَوْمِ ٱلدِّينِ <small><sup> ٤</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>مٰلِكِ يَوْمِ الدِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نِۗ</span><small><sup> ٤</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-4">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">مَـٰلِكِ يَوْمِ ٱلدِّينِ <small><sup> ٤</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>مٰلِكِ يَوْمِ الدِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نِۗ</span><small><sup> ٤</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Maaliki Yawmid-Deen<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">報應日的主。<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">रोज़े जज़ा का मालिक है।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">Soberano absoluto del Día del Juicio Final,<br /></h4>
+                                <h4 class="translation french" style="display: none;">Maître du Jour de la rétribution.<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">বিচারকালের মালিক।<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">Soberano do Dia do Juízo.<br /></h4>
+                                <h4 class="translation russian" style="display: none;">(Единственному) Царю [Правителю] Дня Воздаяния!<br /></h4>
+                                <h4 class="translation german" style="display: none;">dem Herrscher am Tag des Gerichts.<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">最後の審きの日の主宰者に。<br /></h4>
+                                <h4 class="translation korean" style="display: none;">심판의 날을 주관하시도다<br /></h4>
+                                <h4 class="translation english">Sovereign of the Day of Recompense.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:4 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />i.e., repayment and compensation for whatever was earned of good or evil during life on this earth.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+    
+                        <div id="5" data-id="5" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:5" style="font-size: 12px;cursor: default;">1:5</div></div>
+                                <div class="circle-container-inner" id="play-sa-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_sa" src="../dist/audio/saad_al_ghamdi/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_ar" src="../dist/audio/abdul_rahman_al_sudais/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_ab" src="../dist/audio/abu_bakr_al_shatri/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_ma" src="../dist/audio/maher_al_muaiqly/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_ss" src="../dist/audio/saud_al_shuraim/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_aa" src="../dist/audio/ahmad_al_ajmi/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001005"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001005_fa" src="../dist/audio/fares_abbad/001005.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001005_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:5" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-5">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ <small><sup> ٥</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نُۗ</span><small><sup> ٥</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-5">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ <small><sup> ٥</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نُۗ</span><small><sup> ٥</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Iyyaaka na’budu wa lyyaaka nasta’een<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">我們只崇拜你，只求你祐助，<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">हम तेरी ही इबादत करते हैं, और तुझ ही से मदद मांगते है।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">solo a Ti te adoramos y solo de Ti imploramos ayuda.<br /></h4>
+                                <h4 class="translation french" style="display: none;">C'est Toi [Seul] que nous adorons, et c'est Toi [Seul] dont nous implorons secours.<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">“তোমারই আমরা এবাদত করি, এবং তোমারই কাছে আমরা সাহায্য প্রার্থনা করি।”<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">Só a Ti adoramos e só de Ti imploramos ajuda!<br /></h4>
+                                <h4 class="translation russian" style="display: none;">(Только) Тебе мы служим [посвящаем свое поклонение] и (только) к Тебе обращаемся за помощью (в том, что можешь сделать только Ты)!<br /></h4>
+                                <h4 class="translation german" style="display: none;">Dir allein dienen wir, und zu Dir allein flehen wir um Hilfe.<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">わたしたちはあなたにのみ崇め仕え，あなたにのみ御助けを請い願う。<br /></h4>
+                                <h4 class="translation korean" style="display: none;">우리는 당신만을 경배하오며 당신에게만 구원을 비노니<br /></h4>
+                                <h4 class="translation english">It is You we worship and You we ask for help.<br /></h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+    
+                        <div id="6" data-id="6" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:6" style="font-size: 12px;cursor: default;">1:6</div></div>
+                                <div class="circle-container-inner" id="play-sa-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_sa" src="../dist/audio/saad_al_ghamdi/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_ar" src="../dist/audio/abdul_rahman_al_sudais/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_ab" src="../dist/audio/abu_bakr_al_shatri/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_ma" src="../dist/audio/maher_al_muaiqly/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_ss" src="../dist/audio/saud_al_shuraim/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_aa" src="../dist/audio/ahmad_al_ajmi/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001006"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001006_fa" src="../dist/audio/fares_abbad/001006.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001006_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:6" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-6">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ <small><sup> ٦</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>اِهْدِنَا الصِّرَاطَ الْمُسْتَقِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مَۙ</span><small><sup> ٦</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-6">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ <small><sup> ٦</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>اِهْدِنَا الصِّرَاطَ الْمُسْتَقِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مَۙ</span><small><sup> ٦</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Ihdinas-Siraatal-Mustaqeem<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">求你引導我們上正路，<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">हमें सीधा रास्ता दिखा।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">¡Guíanos por el camino recto!<br /></h4>
+                                <h4 class="translation french" style="display: none;">Guide-nous dans le droit chemin,<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">“আমাদের তুমি সহজ-সঠিক পথে পরিচালিত করো, --”<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">Guia-nos à senda reta,<br /></h4>
+                                <h4 class="translation russian" style="display: none;">Веди (Ты) нас Прямым Путем,<br /></h4>
+                                <h4 class="translation german" style="display: none;">Leite uns den geraden Weg,<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">わたしたちを正しい道に導きたまえ，<br /></h4>
+                                <h4 class="translation korean" style="display: none;">저희들을 올바른 길로 인도하여 주시옵소서<br /></h4>
+                                <h4 class="translation english">Guide us to the straight path -<br /></h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+    
+                        <div id="7" data-id="7" class="verse-container">
+                            <div class="circle-container">
+                                <div class="circle-container-inner-main"><div class="circle-inner-main w3-blue cursor-pointer" data-title="Al-Fatihah 1:7" style="font-size: 12px;cursor: default;">1:7</div></div>
+                                <div class="circle-container-inner" id="play-sa-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_sa" src="../dist/audio/saad_al_ghamdi/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_sa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ar-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_ar" src="../dist/audio/abdul_rahman_al_sudais/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_ar')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ab-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_ab" src="../dist/audio/abu_bakr_al_shatri/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_ab')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ma-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_ma" src="../dist/audio/maher_al_muaiqly/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_ma')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-ss-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_ss" src="../dist/audio/saud_al_shuraim/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_ss')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-aa-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_aa" src="../dist/audio/ahmad_al_ajmi/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_aa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner hidden" id="play-fa-001007"><div class="circle-inner w3-blue cursor-pointer" data-title="Play"><audio id="audio001007_fa" src="../dist/audio/fares_abbad/001007.mp3" preload="auto"></audio><span class="play-pause" onclick="togglePlayPause('audio001007_fa')"><i class="fas fa-play"></i></span></div></div>
+                                <div class="circle-container-inner"><div class="circle-inner myBtn_multi w3-blue cursor-pointer" data-verse="1:7" data-title="Tafsir"><i class="fa-regular fa-file-lines"></i></div></div>
+                                <div class="modal modal_multi w3-animate-zoom" id="modal-1-7">
+                                    <div class="modal-content w3-round-small">
+                                        <span class="close1 close_multi">
+                                            <div class="w3-blue">
+                                                <span style="float:left;cursor:default;padding:10px;"><i class="fa-regular fa-file-lines"></i> Tafsir Ibn Kathir</span>
+                                                <span style="float:right;cursor:pointer;padding:10px;">Close <i class="fa-solid fa-x"></i></span>
+                                                <span class="button button-primary w3-blue" style="cursor:default;padding:10px;font-size:18px;">&nbsp;</span>
+                                                <audio controls="controls w3-blue" class="myAudio" controlsList="nodownload" preload="metadata" style="width:100%;display: none;"></audio>
+                                            </div>
+                                        </span><br />
+                                        <div class="container container-sm-bg">
+                                            <div class="inner">
+                                                <div class="w3-content">
+                                                    <h1 class="h1-without-tajweed">صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ <small><sup> ٧</sup></small></h1>
+                                                    <h2 class="tajweed h2-with-tajweed"><span>صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَࣖ</span><small><sup> ٧</sup></small></h2>
+                                                    <br /><div class="site-div has-top-divider"></div><br />
+                                                    <div id="tafsir-content-1-7">
+                                                        <!-- Content -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sticky-footer w3-blue">
+                                            quran-web3.nft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-container">
+                                <h1 class="h1-without-tajweed">صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ <small><sup> ٧</sup></small></h1>
+                                <h2 class="tajweed h2-with-tajweed"><span>صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَࣖ</span><small><sup> ٧</sup></small></h2>
+                                <h4 class="translation transliteration" style="display: none;">Siraatal-lazeena an’amta ‘alaihim ghayril-maghdoobi ‘alaihim wa lad-daaalleen<br /></h4>
+                                <h4 class="translation chinese" style="display: none;">你所祐助者的路，不是受譴怒者的路，也不是迷誤者的路。<br /></h4>
+                                <h4 class="translation hindi" style="display: none;">उन लोगों का रास्ता जिन पर तूने इनाम फ़रमाया, जो माअतूब नहीं हुए, जो भटके हुए नहीं है।<br /></h4>
+                                <h4 class="translation spanish" style="display: none;">El camino de los que has colmado con Tus favores, no el de los que cayeron en Tu ira, ni el de los que se extraviaron.<br /></h4>
+                                <h4 class="translation french" style="display: none;">le chemin de ceux que Tu as comblés de faveurs, non pas de ceux qui ont encouru Ta colère, ni des égarés.<br /></h4>
+                                <h4 class="translation bengali" style="display: none;">“তাদের পথে যাদের প্রতি তুমি নিয়ামত অর্পণ করেছ, তাদের ব্যতীত যাদের প্রতি গযব এসেছে, এবং তাদেরও নয় যারা পথভ্রষ্ট।”<br /></h4>
+                                <h4 class="translation portuguese" style="display: none;">À senda dos que agraciaste, não à dos abominados, nem à dos extraviados.<br /></h4>
+                                <h4 class="translation russian" style="display: none;">Путем тех, которых Ты благом одарил, (а) не (путем) тех, которые под (Твоим) гневом, и не (путем) заблудших.<br /></h4>
+                                <h4 class="translation german" style="display: none;">den Weg derjenigen, denen Du Gunst erwiesen hast, nicht derjenigen, die (Deinen) Zorn erregt haben, und nicht der Irregehenden!<br /></h4>
+                                <h4 class="translation japanese" style="display: none;">あなたが御恵みを下された人々の道に，あなたの怒りを受けし者，また踏み迷える人々の道ではなく。<br /></h4>
+                                <h4 class="translation korean" style="display: none;">그 길은 당신께서 축복을 내리신 길이며 노여움을 받은 자나방황하는 자들이 걷지않는 가장 올바른 길이옵니다<br /></h4>
+                                <h4 class="translation english">The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray.<br /></h4>
+                                <span class="translation hide" style="display: none;"></span>
+                            </div>
+                        </div>
+    
+                        <br /><div class="site-div has-top-divider"></div><br />
+
+                    </div>
+
+                    <div id="surahOption" style="display: none;"><br />
+
+                        <a class="button myBtn_multi" style="font-size: 16px;width:100%;margin-bottom: 20px;margin-top: -5px;margin-bottom: 23px;cursor:pointer;">Play Surah</a>
+                        <div  class="modal1 modal_multi">
+                            <div class="repeat-form modal-content1 w3-border w3-round-xlarge w3-padding-large" style="max-width: 1128px; margin: auto;">
+                                <div class="button w3-border w3-round-large" style="font-size: 16px;width:100%;margin-bottom: 20px;cursor:default;">Verse Repeater</div>
+                                <div class="w3-margin-top">
+                                    <label for="startVerse">Start Verse:</label>
+                                    <input type="number" id="startVerse" min="1" max="7" value="1" oninput="validateInput(this)" class="w3-input w3-border w3-round-large">
+                                </div>
+                                <div class="w3-margin-top">
+                                    <label for="endVerse">End Verse:</label>
+                                    <input type="number" id="endVerse" min="1" max="7" value="7" oninput="validateInput(this)" class="w3-input w3-border w3-round-large">
+                                </div>
+                                <div class="w3-margin-top">
+                                    <label for="repeatCount">Repeat Count:</label>
+                                    <input type="number" id="repeatCount" min="1" max="10" value="3" oninput="validateInput(this)" class="w3-input w3-border w3-round-large">
+                                </div>
+                                <div class="w3-margin-top w3-center">
+                                    <button style="float: left;" class="button w3-border w3-round-large" onclick="startRepeat('001')">Start Repeat</button>
+                                    <button style="float: right;" class="button w3-border w3-round-large" onclick="stopRepeat()">Stop Repeat</button><br />
+                                </div>
+                                <div id="closeButton" class="button w3-border w3-round-large close close_multi" style="font-size: 16px;width:100%;margin-top: 20px;cursor:pointer;">Close</div>
+                            </div>
+                        </div>
+                        <script src="../dist/js/repeater.js"></script>
+
+                        <br /><div class="site-div has-top-divider"></div><br />
+
+                        <h1 style="text-align:justify;direction:rtl;text-align-last:center;" class=" h1-without-tajweed">
+                            بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ<small><sup> ١ </sup></small>
+                            ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ<small><sup> ٢ </sup></small>
+                            ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ<small><sup> ٣ </sup></small>
+                            مَـٰلِكِ يَوْمِ ٱلدِّينِ<small><sup> ٤ </sup></small>
+                            إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ<small><sup> ٥ </sup></small>
+                            ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ<small><sup> ٦ </sup></small>
+                            صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ<small><sup> ٧ </sup></small>
+                        </h1>
+
+                        <h2 style="text-align:justify;direction:rtl;text-align-last:center;" class="tajweed h2-with-tajweed">
+                            <span>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِ</span><small><sup> ١</sup></small>
+                            <span>اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَۙ</span><small><sup> ٢</sup></small>
+                            <span>الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِۙ</span><small><sup> ٣</sup></small>
+                            <span>مٰلِكِ يَوْمِ الدِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نِۗ</span><small><sup> ٤</sup></small>
+                            <span>اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نُۗ</span><small><sup> ٥</sup></small>
+                            <span>اِهْدِنَا الصِّرَاطَ الْمُسْتَقِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مَۙ</span><small><sup> ٦</sup></small>
+                            <span>صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَࣖ</span><small><sup> ٧</sup></small>
+                        </h2>
+
+                        <br /><div class="site-div has-top-divider"></div>
+
+                    </div>
+                    
+                </div>
+            <div class="cta-inner section-inner text-center">
+                <a class="w3-border w3-round-xxlarge w3-card-8 w3-blue" style="float: left;margin-left: 20px;padding: 5px;font-size: 40px;" href="../"><i class="fa fa-arrow-circle-left"></i></a>
+                <sub style="font-size: 40px;cursor: default;"> ١ </sub>
+                <a class="w3-border w3-round-xxlarge w3-card-8 w3-blue" style="float: right;margin-right: 20px;padding: 5px;font-size: 40px;" href="../s/2.html"><i class="fa fa-arrow-circle-right"></i></a>
+                <a href="#" class="w3-border w3-round-xxlarge w3-card-8 w3-blue top" id="backToTop"><i class="fa fa-arrow-circle-up"></i></a>
+            </div>
+        </main>
+        <ul class="w3-navbar w3-xlarge w3-black">
+            <li><a href="../"><span class="w3-centered" title="quran-web3.nft"><i class="fa-solid fa-book-quran"></i> Quran-Web3.NFT</span></a></li>
+            <li style="float:right"><a href="../donate.html"><span class="w3-center" data-title="Donate">Donate</span></a></li>
+            <li style="float:right;"><a href="../about.html"><span class="w3-center" data-title="About">About</span></a></li>
+        </ul>
+
+    </div>
+    <script src="../dist/js/main.min.js"></script>
+</body>
+</html>
+
