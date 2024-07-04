@@ -114,20 +114,25 @@
 							function displayBookmarks() {
 								var bookmarks = getBookmarks();
 								var bookmarkedVerses = document.getElementById('bookmarkedVerses');
-								bookmarkedVerses.innerHTML = ''; 
+								bookmarkedVerses.innerHTML = '';
 								Object.keys(bookmarks).forEach(function(pageNumber) {
 									bookmarks[pageNumber].forEach(function(verseId) {
 										var bookmarkItem = document.createElement('span');
 										bookmarkItem.className = 'bookmark-item';
 										var link = document.createElement('a');
 										link.textContent = verseId;
-										link.href = 'p/' + pageNumber + '.html#' + verseId;
+										link.href = `p/${pageNumber}.html#${verseId}`;
+										link.addEventListener('click', function(event) {
+											localStorage.setItem('targetVerseId', verseId);
+											window.location.href = `p/${pageNumber}.html`;
+										});
 										var deleteBtn = document.createElement('span');
 										deleteBtn.textContent = ' ' + '🗑️' + ', ';
 										deleteBtn.className = 'delete-btn';
-										deleteBtn.addEventListener('click', function() {
+										deleteBtn.addEventListener('click', function(event) {
+											event.stopPropagation();
 											removeBookmark(pageNumber, verseId);
-											displayBookmarks(); 
+											displayBookmarks();
 										});
 										bookmarkItem.appendChild(link);
 										bookmarkItem.appendChild(deleteBtn);
@@ -142,7 +147,7 @@
 								}
 							}
 							document.addEventListener("DOMContentLoaded", function() {
-								displayBookmarks(); 
+								displayBookmarks();
 							});
 						</script>
 						<div class="w3-row-home">
