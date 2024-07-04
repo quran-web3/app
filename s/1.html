@@ -34,22 +34,37 @@
                     <div class="progress"></div>
                 </div>
             </ul>
-            <div class="menu-container unselectable" id="menuContainer">
-                <div class="menu-item" onclick="toggleTheme()"><div class="lights-toggle" style="margin-left: 20px;padding-top: 10px;"><input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch"><label for="lights-toggle" class="text-xs"><span><span></span></span>&nbsp;</label></div>
-                <script src="../dist/js/themecolor.js"></script>
-            </div>
-                <label for="tajweedToggle"><input class="w3-check" type="checkbox" id="tajweedToggle" style="cursor: pointer;" onchange="toggleTajweed()"/><span style="font-size: 18px;font-weight: bold;cursor: pointer;"> Tajweed</span></label>______________
-                <div class="menu-item">
-                    <div style="font-size: 20px;cursor: default;text-align: center;padding: 20px;font-weight: bold;">Font Size</div>
-                    <div class="font-size-container">
-                        <span class="w3-transparent cursor-pointer" style="font-size: 20px;" onclick="zoomOut()"><i class="fa-solid fa-circle-minus"></i></span>
-                        <span class="w3-transparent cursor-pointer" style="font-size: 28px;" onclick="resetSize()"><i class="fa-solid fa-rotate"></i></span>
-                        <span class="w3-transparent cursor-pointer" style="font-size: 32px;" onclick="zoomIn()"><i class="fa-solid fa-circle-plus"></i></span>
-                    </div>
-                </div>______________
-                <div class="menu-item" style="font-size: 20px;padding: 10px;font-weight: bold;" id="reciterIcon"><i class="fa-regular fa-user"></i> Reciter</div>
-            </div>    
 
+            <div class="menu-container unselectable w3-border w3-round-large w3-animate-zoom" id="menuContainer">
+                <div class="menu-item" style="margin-top: -10px;margin-left: 15px;margin-bottom: 40px;" onclick="toggleTheme()">
+                    <div class="lights-toggle">
+                        <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch">
+                        <label for="lights-toggle" class="text-xs">
+                            <span><span></span></span>
+                        </label>
+                    </div>
+                </div>
+                <script src="../dist/js/themecolor.js"></script>
+                <div class="menu-item w3-border w3-round-large">
+                    <div class="menu-item-title">Font Size</div>
+                    <div class="font-size-container">
+                        <span class="font-size-option" style="font-size: 20px;" onclick="zoomOut()"><i class="fa-solid fa-circle-minus"></i></span>
+                        <span class="font-size-option" style="font-size: 28px;" onclick="resetSize()"><i class="fa-solid fa-rotate"></i></span>
+                        <span class="font-size-option" style="font-size: 32px;" onclick="zoomIn()"><i class="fa-solid fa-circle-plus"></i></span>
+                    </div>
+                </div>
+                <div class="menu-item w3-border w3-round-large">
+                    <label for="tajweedToggle">
+                        <input class="w3-check cursor-pointer" type="checkbox" id="tajweedToggle" onchange="toggleTajweed()">
+                        <span class="cursor-pointer">Tajweed</span>
+                    </label>
+                </div>
+                <div class="menu-item w3-border w3-round-large" id="reciterIcon">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Reciter</span>
+                </div>
+            </div>
+            
             <div class="container">
         
                     <h3 class="text-center frame" style="font-size: 50px;font-family: surah;">001surah</h3>
@@ -70,23 +85,10 @@
                             <div class="container container-sm-bg">
                                 <div class="inner">
                                     <div class="w3-content">
-                                        <h3 class="text-center" style="font-size: 30px;font-weight: bold;">About Surah Al-Fatihah</h3>
-                                        <center><b>7 ayahs revealed in Mecca</b></center><br />
-                                        <div class="site-div has-top-divider"></div>
-                                        <h3>The Meaning of Al-Fatihah and its Various Names</h3>
-                                        <p>This Surah is called</p>
-                                        <p>- Al-Fatihah, that is, the Opener of the Book, the Surah with which prayers are begun.</p>
-                                        <p>- It is also called, Umm Al-Kitab (the Mother of the Book), according to the majority of the scholars.</p>
-                                        <p>In an authentic Hadith recorded by At-Tirmidhi, who graded it Sahih, Abu Hurayrah said that the Messenger of Allah <strong style="color: rgb(95, 99, 104);">ﷺ </strong>said,</p>
-                                        <p>الْحَمْدُ للهِ رَبَ الْعَالَمِينَ أُمُّ الْقُرْآنِ وَأُمُّ الْكِتَابِ وَالسَّبْعُ الْمَثَانِي وَالْقُرْآنُ الْعَظِيمُ</p>
-                                        <p>Al-Hamdu lillahi Rabbil-`Alamin is the Mother of the Qur'an, the Mother of the Book, and the seven repeated Ayat of the Glorious Qur'an.It is also called Al-Hamd and As-Salah, because the Prophet ﷺ said that his Lord said,</p>
-                                        <p>قَسَمْتُ الصَّلَاةَ بَيْنِي وَبَيْنَ عَبْدِي نِصْفَيْنِ، فَإِذَا قَالَ الْعَبْدُ:الْحَمْدُ للهِ رَبِّ الْعَالَمِنَ، قَالَ اللهُ: حَمِدَنِي عَبْدِي</p>
-                                        <p>The prayer (i.e., Al-Fatihah) is divided into two halves between Me and My servants. When the servant says, `All praise is due to Allah, the Lord of existence,' Allah says, 'My servant has praised Me. Al-Fatihah was called the Salah, because reciting it is a condition for the correctness of Salah - the prayer. Al-Fatihah was also called Ash-Shifa' (the Cure).It is also called Ar-Ruqyah (remedy), since in the Sahih, there is the narration of Abu Sa`id telling the story of the Companion who used Al-Fatihah as a remedy for the tribal chief who was poisoned. Later, the Messenger of Allah ﷺ said to a Companion,</p>
-                                        <p>How did you know that it is a Ruqyah?Al-Fatihah was revealed in Makkah as Ibn Abbas, Qatadah and Abu Al-Aliyah stated.Allah said,</p>
-                                        <p>And indeed, We have bestowed upon you the seven Mathani (seven repeatedly recited verses), (i.e. Surah Al-Fatihah) (15:87). Allah knows best.</p>
+                                        <div id="surah-info-1"></div>
                                     </div>					
                                 </div>
-                            </div>										
+                            </div>
                             <div class="sticky-footer w3-blue">
                                 quran-web3.nft
                             </div>
@@ -103,7 +105,7 @@
                                 <button class="button active" style="cursor: pointer;" onclick="searchVerse()">JUMP</button>
                             </center>
                         </p>
-
+                            
                         <div class="site-div has-top-divider"></div><br />
 
                         <div id="1" data-id="1" class="verse-container">
@@ -148,17 +150,17 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ <small><sup> ١</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِ</span><small><sup> ١</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Bismillah hir rahman nir raheem<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">奉至仁至慈的真主之名<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">अल्लाह के नाम से जो रहमान व रहीम है।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">En el nombre de Dios, el Compasivo con toda la creación, el Misericordioso con los creyentes.<br /></h4>
-                                <h4 class="translation french" style="display: none;">Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux.<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">আল্লাহর নাম নিয়ে (আরম্ভ করছি), (যিনি) রহমান (--পরম করুণাময়, যিনি অসীম করুণা ও দয়া বশতঃ বিশ্বজগতের সমস্ত সৃষ্টির সহাবস্থানের প্রয়োজনীয় সব ব্যবস্থা অগ্রিম করে রেখেছেন), (যিনি) রহীম (--অফুরন্ত ফলদাতা, যাঁর অপার করুণা ও দয়ার ফলে প্রত্যেকের ক্ষুদ্রতম শুভ-প্রচেষ্টাও বিপুলভাবে সাফল্যমণ্ডিত ও পুরস্কৃত হয়ে থাকে)।<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">Em nome de Deus, o Clemente, o Misericordioso.<br /></h4>
-                                <h4 class="translation russian" style="display: none;">С именем Аллаха Милостивого, Милосердного!<br /></h4>
-                                <h4 class="translation german" style="display: none;">Im Namen Allahs, des Allerbarmers, des Barmherzigen.<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">慈悲あまねく慈愛深きアッラーの御名において。<br /></h4>
-                                <h4 class="translation korean" style="display: none;">자비로우시고 자애로우신 하나님의 이름으로<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001001"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001001"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001001"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001001"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001001"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001001"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001001"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001001"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001001"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001001"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001001"></div></h4>
                                 <h4 class="translation english">In the name of Allah,<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> the Entirely Merciful, the Especially Merciful.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;²</a><br />
                                     <div  class="modal1 modal_multi w3-card-8">
                                         <div class="modal-content1">
@@ -173,6 +175,37 @@
                                         </div>
                                     </div>
                                 </h4>
+                                <h4 class="translation hindi1" style="display: none;">अल्लाह के नाम से, जो अत्यंत दयावान्, असीम दया वाला है।<br /></h4>
+                                <h4 class="translation spanish1" style="display: none;">(Empiezo)<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> con el nombre de Al-lah<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;²</a>, el Clemente, el Misericordioso<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;³</a>.<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:1 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />A pesar de que, tradicionalmente, el encabezamiento de cada sura, conocido como el basmalah, ha sido traducido como «En el nombre de Al-lah […]», la mayoría de los comentaristas opinan que debe sobrentenderse: «Empiezo la recitación del Corán con el nombre de Al-lah, buscando ayuda en Él, […]»; por este motivo esta traducción ha optado por una expresión más cercana a su significado real, pero abreviada. No hay un consenso acerca de si el basmalah constituye la primera aleya (o verso coránico) de esta sura o simplemente la encabeza como en el resto de los capítulos del Sagrado Corán —con la excepción de la sura 9 (At-Taubah), donde no aparece— aunque la opinión más extendida es la de considerarla como la primera aleya de la sura Al Fatihah.
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:1 (2):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Al-lah es el nombre propio de Dios en árabe. A diferencia de la palabra Dios, el término «Al-lah» no tiene plural, por lo que no da pie a ambigüedades, y proviene del artículo árabe al más la palabra ilah (divinidad, el que es adorado); así pues, significa: el (único) que merece ser adorado. Cabe destacar que el nombre que Dios recibe en siriaco es Alaha, muy cercano a Al-lah. Y entre las palabras hebreas que más se utilizan para designar a Dios y que aparecen en la Biblia, se encuentran: Eloh, Elah y su plural mayestático Elohim. Al-lah aparece a veces escrito como Allah o transliterado al español como Alá; en cualquier caso hace referencia al Único y Verdadero Dios, que es el mismo Dios de los cristianos y judíos.
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:1 (3):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Los adjetivos «Clemente» y «Misericordioso» no recogen la diferencia que la lengua árabe establece entre Rahman y Rahim. Rahman, traducido aquí por Clemente,es un adjetivo solamente atribuible a Al-lah y hace referencia a Su misericordia, en el sentido más extenso, para con toda Su creación. El adjetivo Rahim, traducido como Misericordioso, también hace referencia a la misericordia de Al-lah, pero a una misericordia más específica sobre Sus siervos creyentes.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation french1" style="display: none;">Au nom d’Allah, le Tout Clément, le Tout Miséricordieux.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:1 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />La traduction par « Le Tout Miséricordieux, le Très Miséricordieux », du reste très heureuse quant à sa fidélité à la paronymie de l’expression d’origine : raḥmân, raḥîm, polyptote formé sur la racine commune « raḥama », ne bénéficie malheureusement pas de la même réussite sur le plan du rythme et de l’euphonie. La formule « Le Tout Clément, le Tout Miséricordieux », quoique moins fidèle à la dérivation littérale, nous a semblé plus naturelle et plus fluide. L’intensification deux fois par l’adverbe « Tout » plutôt que par « Très », traduit bien celle qui, propre à l’arabe, utilise le superlatif interne : « ân » dans « raḥmân », « îm » dans « raḥîm ». L’adverbe « Tout » est différent de « Très », superlatif externe qui se traduit ordinairement par جدّا ; tel n’est pas le cas de « Tout », aux valeurs sémantiques plus absolues et qui s’inscrit harmonieusement dans la nature absolue et « toute puissante » des Attributs divins.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation japanese1" style="display: none;">慈悲あまねく*慈愛深き*アッラー*の御名において。<br /></h4>
+                                <h4 class="translation indonesian" style="display: none;">Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.<br /></h4>
                                 <span class="translation hide" style="display: none;"></span>
                             </div>
                         </div>
@@ -221,17 +254,17 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ <small><sup> ٢</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَۙ</span><small><sup> ٢</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Alhamdu lillaahi Rabbil ‘aalameen<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">一切贊頌，全歸真主，全世界的主，<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">तारीफ़ अल्लाह ही के लिये है जो तमाम क़ायनात का रब है।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">Todas las alabanzas son para Dios, Señor de todo cuanto existe,<br /></h4>
-                                <h4 class="translation french" style="display: none;">Louange à Allah, Seigneur de l'univers.<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">সমস্ত প্রশংসা আল্লাহ্‌র প্রাপ্য, সমুদয় সৃষ্ট-জগতের রব্ব।<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">Louvado seja Deus, Senhor do Universo,<br /></h4>
-                                <h4 class="translation russian" style="display: none;">(Вся) хвала – (лишь одному) Аллаху, Господу миров [Господу всех творений],<br /></h4>
-                                <h4 class="translation german" style="display: none;">(Alles) Lob gehört Allah, dem Herrn der Welten,<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">万有の主，アッラーにこそ凡ての称讃あれ，<br /></h4>
-                                <h4 class="translation korean" style="display: none;">온 우주의 주님이신 하나님께찬미를 드리나이다<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001002"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001002"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001002"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001002"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001002"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001002"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001002"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001002"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001002"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001002"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001002"></div></h4>
                                 <h4 class="translation english">[All] praise is [due] to Allāh, Lord<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> of the worlds -<br />
                                     <div  class="modal1 modal_multi w3-card-8">
                                         <div class="modal-content1">
@@ -240,6 +273,24 @@
                                         </div>
                                     </div>
                                 </h4>
+                                <h4 class="translation hindi1" style="display: none;">हर प्रकार की प्रशंसा उस अल्लाह<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> के लिए है, जो सारे संसारों का पालनहार<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;²</a> है।<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:2 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />'अल्लाह' का अर्थ 'ह़क़ीक़ी पूज्य' है। जो संसार के रचयिता, विधाता के लिए विशिष्ट है।
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:2 (2):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />'पालनहार' होने का अर्थ यह है कि जिस ने इस संसार की रचना करके इसके प्रतिपालन की ऐसी विचित्र व्यवस्था की है कि सभी को अपनी आवश्यक्ता तथा स्थिति के अनुसार सब कुछ मिल रहा है। यह संसार का पूरा कार्य, सूर्य, वायु, जल, धरती सब जीवन की रक्षा एवं जीवन की प्रत्येक योग्यता की रखवाली में लगे हुए हैं। इससे सत्य पूज्य का परिचय एवं ज्ञान होता है।
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation spanish1" style="display: none;">¡Alabado sea Al-lah, Señor de toda la creación!,<br /></h4>
+                                <h4 class="translation french1" style="display: none;">Louange à Allah, Seigneur de l’Univers.<br /></h4>
+                                <h4 class="translation japanese1" style="display: none;">全創造物の主*、アッラー*に称賛*あれ、<br /></h4>
+                                <h4 class="translation indonesian" style="display: none;">Segala puji bagi Allah, Tuhan seluruh alam.<br /></h4>
                                 <span class="translation hide" style="display: none;"></span>
                             </div>
                         </div>
@@ -288,18 +339,30 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ <small><sup> ٣</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>الرَّحْمٰنِ الرَّحِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مِۙ</span><small><sup> ٣</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Ar-Rahmaanir-Raheem<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">至仁至慈的主，<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">रहमान और रहीम है।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">el Compasivo, el Misericordioso.<br /></h4>
-                                <h4 class="translation french" style="display: none;">Le Tout Miséricordieux, le Très Miséricordieux,<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">রহমান, রহীম।<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">Clemente, o Misericordioso,<br /></h4>
-                                <h4 class="translation russian" style="display: none;">Милостивому (ко всем Своим творениям в этом мире), (и) Милосердному (только к верующим в День Суда),<br /></h4>
-                                <h4 class="translation german" style="display: none;">dem Allerbarmer, dem Barmherzigen,<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">慈悲あまねく慈愛深き御方，<br /></h4>
-                                <h4 class="translation korean" style="display: none;">그분은 자애로우시고 자비로 우시며<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001003"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001003"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001003"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001003"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001003"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001003"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001003"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001003"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001003"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001003"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001003"></div></h4>
                                 <h4 class="translation english">The Entirely Merciful, the Especially Merciful,<br /></h4>
+                                <h4 class="translation hindi1" style="display: none;">जो अत्यंत दयावान्, असीम दया वाला<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> है।<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:3 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />अर्थात वह संसार की व्यवस्था एवं रक्षा अपनी अपार दया से कर रहा है। अतः प्रशंसा एवं पूजा के योग्य भी मात्र वही है।
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation spanish1" style="display: none;">el Clemente, el Misericordioso,<br /></h4>
+                                <h4 class="translation french1" style="display: none;">Le Tout Clément, le Tout Miséricordieux.<br /></h4>
+                                <h4 class="translation japanese1" style="display: none;">慈悲あまねく慈愛深きお方、<br /></h4>
+                                <h4 class="translation indonesian" style="display: none;">Yang Maha Pengasih, Maha Penyayang.<br /></h4>
                                 <span class="translation hide" style="display: none;"></span>
                             </div>
                         </div>
@@ -348,22 +411,55 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">مَـٰلِكِ يَوْمِ ٱلدِّينِ <small><sup> ٤</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>مٰلِكِ يَوْمِ الدِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نِۗ</span><small><sup> ٤</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Maaliki Yawmid-Deen<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">報應日的主。<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">रोज़े जज़ा का मालिक है।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">Soberano absoluto del Día del Juicio Final,<br /></h4>
-                                <h4 class="translation french" style="display: none;">Maître du Jour de la rétribution.<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">বিচারকালের মালিক।<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">Soberano do Dia do Juízo.<br /></h4>
-                                <h4 class="translation russian" style="display: none;">(Единственному) Царю [Правителю] Дня Воздаяния!<br /></h4>
-                                <h4 class="translation german" style="display: none;">dem Herrscher am Tag des Gerichts.<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">最後の審きの日の主宰者に。<br /></h4>
-                                <h4 class="translation korean" style="display: none;">심판의 날을 주관하시도다<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001004"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001004"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001004"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001004"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001004"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001004"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001004"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001004"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001004"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001004"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001004"></div></h4>
                                 <h4 class="translation english">Sovereign of the Day of Recompense.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a><br />
                                     <div  class="modal1 modal_multi w3-card-8">
                                         <div class="modal-content1">
                                             <span style="font-size:14px;font-weight:bolder;">Footnote 1:4 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
                                             <br />i.e., repayment and compensation for whatever was earned of good or evil during life on this earth.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation hindi1" style="display: none;">जो बदले<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> के दिन का मालिक है।<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:4 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />बदले के दिन से अभिप्राय प्रलय का दिन है। आयत का भावार्थ यह है कि सत्य धर्म बदले के नियम पर आधारित है। अर्थात जो जैसा करेगा वैसा भरेगा। जैसे कोई जौ बोकर गेहूँ की, तथा आग में कूदकर शीतल होने की आशा नहीं कर सकता, ऐसे ही भले-बुरे कर्मों का भी अपना स्वभाविक गुण और प्रभाव होता है। फिर संसार में भी कुकर्मों का दुष्परिणाम कभी-कभी देखा जाता है। परंतु यह भी देखा जाता है कि दुराचारी और अत्याचारी सुखी जीवन निर्वाह कर लेता है, और उसकी पकड़ इस संसार में नहीं होती। इसलिए न्याय के लिए एक दिन अवश्य होना चाहिए। उसी का नाम 'क़ियामत' (प्रलय का दिन) है। "बदले के दिन का मालिक" होने का अर्थ यह है कि संसार में भी उसने इनसानों को अधिकार और राज्य दिए हैं। परंतु प्रलय के दिन सब अधिकार उसी का रहेगा। और वही न्यायपूर्वक सबको उनके कर्मों का प्रतिफल देगा।
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation spanish1" style="display: none;">Soberano del Día del Juicio Final<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a>.<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:4 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Otros nombres con que se conoce ese día son: el Día de la Retribución, el Día de la Rendición de Cuentas, el Día de la Verdad, el Día de la Resurrección, etc. Todos estos nombres hacen referencia al mismo día de gran duración en el que Al-lah resucitará a los hombres, los juzgará y les dará la recompensa o el castigo que merezcan.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation french1" style="display: none;">Souverain<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> du Jour de la Rétribution.<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:4 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />ملك se lit de deux façons : en allongeant la première syllabe, au sens littéral de « possesseur », ou en la raccourcissant, au sens de « roi ». La traduction par « souverain » inclut, nous semble-t-il, les deux sens. Notons que la lecture de Hafç, adoptée pour la présente traduction, opte pour la première prononciation.
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation japanese1" style="display: none;">報いの日*の支配者（に）。<br /></h4>
+                                <h4 class="translation indonesian" style="display: none;">Pemilik hari pembalasan.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:4 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Yaumiddīn (hari pembalasan), hari waktu manusia menerima pembalasan amalnya, baik atau buruk. Disebut juga yaumul qiyāmah, yaumul ḥisāb dan sebagainya.
                                         </div>
                                     </div>
                                 </h4>
@@ -415,18 +511,37 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ <small><sup> ٥</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نُۗ</span><small><sup> ٥</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Iyyaaka na’budu wa lyyaaka nasta’een<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">我們只崇拜你，只求你祐助，<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">हम तेरी ही इबादत करते हैं, और तुझ ही से मदद मांगते है।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">solo a Ti te adoramos y solo de Ti imploramos ayuda.<br /></h4>
-                                <h4 class="translation french" style="display: none;">C'est Toi [Seul] que nous adorons, et c'est Toi [Seul] dont nous implorons secours.<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">“তোমারই আমরা এবাদত করি, এবং তোমারই কাছে আমরা সাহায্য প্রার্থনা করি।”<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">Só a Ti adoramos e só de Ti imploramos ajuda!<br /></h4>
-                                <h4 class="translation russian" style="display: none;">(Только) Тебе мы служим [посвящаем свое поклонение] и (только) к Тебе обращаемся за помощью (в том, что можешь сделать только Ты)!<br /></h4>
-                                <h4 class="translation german" style="display: none;">Dir allein dienen wir, und zu Dir allein flehen wir um Hilfe.<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">わたしたちはあなたにのみ崇め仕え，あなたにのみ御助けを請い願う。<br /></h4>
-                                <h4 class="translation korean" style="display: none;">우리는 당신만을 경배하오며 당신에게만 구원을 비노니<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001005"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001005"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001005"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001005"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001005"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001005"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001005"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001005"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001005"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001005"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001005"></div></h4>
                                 <h4 class="translation english">It is You we worship and You we ask for help.<br /></h4>
+                                <h4 class="translation hindi1" style="display: none;">(ऐ अल्लाह!) हम तेरी ही इबादत करते हैं और तुझी से सहायता माँगते<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> हैं।<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:5 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />इन आयतों में प्रार्थना के रूप में मात्र अल्लाह ही की पूजा और उसी को सहायतार्थ गुहारने की शिक्षा दी गई है। इस्लाम की परिभाषा में इसी का नाम 'तौह़ीद' (एकेश्वरवाद) है, जो सत्य धर्म का आधार है। और अल्लाह के सिवा या उसके साथ किसी देवी-देवता आदि को पुकारना, उसकी पूजा करना, किसी प्रत्यक्ष साधन के बिना किसी को सहायता के लिये गुहारना, किसी व्यक्ति और वस्तु में अल्लाह का कोई विशेष गुण मानना आदि एकेश्वरवाद (तौह़ीद) के विरुद्ध हैं जो अक्षम्य पाप हैं। जिसके साथ कोई पुण्य का कार्य मान्य नहीं।
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation spanish1" style="display: none;">Solo a Ti adoramos y solo a Ti pedimos ayuda.<br /></h4>
+                                <h4 class="translation french1" style="display: none;">C’est Toi (Seul) Que nous adorons, et c’est Toi (Seul) Dont nous cherchons l’assistance.<br /></h4>
+                                <h4 class="translation japanese1" style="display: none;">私たちはあなただけを崇拝*し，あなただけにお力添えを乞います<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a>。<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:5 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />「崇拝*」だけでなく、アッラー*のお力添えがなければ何事も叶わない。イブン・カスィール*は「（このアーヤ*の）前半部分では、アッラー*に何か他のものを並べることとの決別が、そして後半部分では、自らに何らかの力が備わっているとすることの決別と、アッラー*のみに全てを委ねることが命じられている」とし、この意味こそが「開端章はクルアーン*の奥義（おうぎ）であり、開端章の奥義がこのアーヤ*である」という先人たちの言葉の所以（ゆえん）であるとしている（1：70参照）。
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation indonesian" style="display: none;">Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan.<br /></h4>
                                 <span class="translation hide" style="display: none;"></span>
                             </div>
                         </div>
@@ -475,18 +590,37 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ <small><sup> ٦</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>اِهْدِنَا الصِّرَاطَ الْمُسْتَقِ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>مَۙ</span><small><sup> ٦</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Ihdinas-Siraatal-Mustaqeem<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">求你引導我們上正路，<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">हमें सीधा रास्ता दिखा।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">¡Guíanos por el camino recto!<br /></h4>
-                                <h4 class="translation french" style="display: none;">Guide-nous dans le droit chemin,<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">“আমাদের তুমি সহজ-সঠিক পথে পরিচালিত করো, --”<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">Guia-nos à senda reta,<br /></h4>
-                                <h4 class="translation russian" style="display: none;">Веди (Ты) нас Прямым Путем,<br /></h4>
-                                <h4 class="translation german" style="display: none;">Leite uns den geraden Weg,<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">わたしたちを正しい道に導きたまえ，<br /></h4>
-                                <h4 class="translation korean" style="display: none;">저희들을 올바른 길로 인도하여 주시옵소서<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001006"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001006"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001006"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001006"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001006"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001006"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001006"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001006"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001006"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001006"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001006"></div></h4>
                                 <h4 class="translation english">Guide us to the straight path -<br /></h4>
+                                <h4 class="translation hindi1" style="display: none;">हमें सीधे मार्ग पर चला।<br /></h4>
+                                <h4 class="translation spanish1" style="display: none;">Guíanos por el camino recto,<br /></h4>
+                                <h4 class="translation french1" style="display: none;">Guide-nous sur la voie droite,<br /></h4>
+                                <h4 class="translation japanese1" style="display: none;">私たちを、まっすぐな道<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a>へとお導きください。<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:6 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />来世での成功へと続く道である、イスラーム*のこと（ムヤッサル1頁参照）。
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation indonesian" style="display: none;">Tunjukilah kami jalan yang lurus.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:6 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Jalan yang lurus, yaitu jalan yang benar, yang dapat membuat bahagia di dunia dan akhirat
+                                        </div>
+                                    </div>
+                                </h4>
                                 <span class="translation hide" style="display: none;"></span>
                             </div>
                         </div>
@@ -535,18 +669,69 @@
                             <div class="content-container">
                                 <h1 class="h1-without-tajweed">صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ <small><sup> ٧</sup></small></h1>
                                 <h2 class="tajweed h2-with-tajweed"><span>صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّ</span><span class="cursor-pointer madd-arid-lissukun" title="Madd Arid Lissukun">يْ</span><span>نَࣖ</span><small><sup> ٧</sup></small></h2>
-                                <h4 class="translation transliteration" style="display: none;">Siraatal-lazeena an’amta ‘alaihim ghayril-maghdoobi ‘alaihim wa lad-daaalleen<br /></h4>
-                                <h4 class="translation chinese" style="display: none;">你所祐助者的路，不是受譴怒者的路，也不是迷誤者的路。<br /></h4>
-                                <h4 class="translation hindi" style="display: none;">उन लोगों का रास्ता जिन पर तूने इनाम फ़रमाया, जो माअतूब नहीं हुए, जो भटके हुए नहीं है।<br /></h4>
-                                <h4 class="translation spanish" style="display: none;">El camino de los que has colmado con Tus favores, no el de los que cayeron en Tu ira, ni el de los que se extraviaron.<br /></h4>
-                                <h4 class="translation french" style="display: none;">le chemin de ceux que Tu as comblés de faveurs, non pas de ceux qui ont encouru Ta colère, ni des égarés.<br /></h4>
-                                <h4 class="translation bengali" style="display: none;">“তাদের পথে যাদের প্রতি তুমি নিয়ামত অর্পণ করেছ, তাদের ব্যতীত যাদের প্রতি গযব এসেছে, এবং তাদেরও নয় যারা পথভ্রষ্ট।”<br /></h4>
-                                <h4 class="translation portuguese" style="display: none;">À senda dos que agraciaste, não à dos abominados, nem à dos extraviados.<br /></h4>
-                                <h4 class="translation russian" style="display: none;">Путем тех, которых Ты благом одарил, (а) не (путем) тех, которые под (Твоим) гневом, и не (путем) заблудших.<br /></h4>
-                                <h4 class="translation german" style="display: none;">den Weg derjenigen, denen Du Gunst erwiesen hast, nicht derjenigen, die (Deinen) Zorn erregt haben, und nicht der Irregehenden!<br /></h4>
-                                <h4 class="translation japanese" style="display: none;">あなたが御恵みを下された人々の道に，あなたの怒りを受けし者，また踏み迷える人々の道ではなく。<br /></h4>
-                                <h4 class="translation korean" style="display: none;">그 길은 당신께서 축복을 내리신 길이며 노여움을 받은 자나방황하는 자들이 걷지않는 가장 올바른 길이옵니다<br /></h4>
+                                <h4 class="translation transliteration" style="display: none;"><div id="t01-001007"></div></h4>
+                                <h4 class="translation chinese" style="display: none;"><div id="t02-001007"></div></h4>
+                                <h4 class="translation hindi" style="display: none;"><div id="t03-001007"></div></h4>
+                                <h4 class="translation spanish" style="display: none;"><div id="t04-001007"></div></h4>
+                                <h4 class="translation french" style="display: none;"><div id="t05-001007"></div></h4>
+                                <h4 class="translation bengali" style="display: none;"><div id="t06-001007"></div></h4>
+                                <h4 class="translation portuguese" style="display: none;"><div id="t07-001007"></div></h4>
+                                <h4 class="translation russian" style="display: none;"><div id="t08-001007"></div></h4>
+                                <h4 class="translation german" style="display: none;"><div id="t09-001007"></div></h4>
+                                <h4 class="translation japanese" style="display: none;"><div id="t10-001007"></div></h4>
+                                <h4 class="translation korean" style="display: none;"><div id="t11-001007"></div></h4>
                                 <h4 class="translation english">The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray.<br /></h4>
+                                <h4 class="translation hindi1" style="display: none;">उन लोगों का मार्ग, जिनपर तूने अनुग्रह किया।<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> उनका नहीं, जिनपर तेरा प्रकोप<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;²</a> हुआ और न ही उनका, जो गुमराह हैं।<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />इस आयत में सीधे मार्ग का चिह्न यह बताया गया है कि यह उनका मार्ग है, जिनपर अल्लाह का पुरस्कार हुआ। उनका नहीं, जो प्रकोपित हुए और न उनका, जो सत्य मार्ग से बहक गए।
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (2):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />'प्रकोपित' से अभिप्राय वे हैं, जो सत्य धर्म को, जानते हुए, मात्र अभिमान अथवा अपने पुर्वजों की परंपरागत प्रथा के मोह में अथवा अपनी बड़ाई के जाने के भय से, नहीं मानते। 'गुमराह' से अभिप्रेत वे हैं, जो सत्य धर्म के होते हुए, उससे दूर हो गए और देवी-देवताओं आदि में अल्लाह के विशेष गुण मानकर उनको रोग निवारण, दुःख दूर करने और सुख-संतान आदि देने के लिए गुहारने लगे।
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation spanish1" style="display: none;">el camino de quienes has agraciado, no el de quienes han incurrido en Tu ira ni el de quienes se han extraviado (a pesar de conocer la verdad).<br /></h4>
+                                <h4 class="translation french1" style="display: none;">voie de ceux que Tu as comblés de Tes grâces, non celle des réprouvés,<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a> ni celle des égarés.<br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Par Ta colère. Nous avons préféré traduire غير المغضوب عليهم par le passif, plus fidèle à la structure du texte coranique, et en évitant de traduire par la proposition relative « ceux qui sont réprouvés », « ceux qui ont encouru Ta colère », qui sont des traductions de segments arabes introduits par الذين. Or, ce pronom relatif ne s’est produit que dans الذين أنعمت عليهم , que nous avons effectivement traduit par « ceux que Tu as comblés de Tes grâces ». Du reste, l’égalité et la symétrie des segments : « non celle des réprouvés, ni celle des égarés » évite au rythme le trébuchement dû à la structure déséquilibrée : « non de ceux qui sont réprouvés, ni des égarés », ou « non de ceux qui ont encouru Ta colère, ni des égarés ».
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation japanese1" style="display: none;">あなたが恩恵をお授けになった者たち<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a>、つまり、（あなたの）お怒りを受けるでもなく、迷うでもない者たち<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;²</a>の道へ。<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;³</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />婦人章66-69も参照。
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (2):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />「お怒りを受ける」者たちとは、知識を預かってはいても、それに沿って行わなかった当時のユダヤ教徒*、および彼らと同様の状態にある者たちのこと。また「迷う」者たちとは、無知ゆえに導かれず、正しい道から迷い去ってしまった当時のキリスト教徒*、および彼らと同様の状態にある者たちのこと（前掲書、同頁参照）。
+                                        </div>
+                                    </div>
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (3):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />礼拝中かどうかに関わらず、開端章を読み終えた後には、「アーミーン（アッラーよ、聞き届けたまえ）」と唱えることが薦（すす）められている（前掲書、同頁参照）。
+                                        </div>
+                                    </div>
+                                </h4>
+                                <h4 class="translation indonesian" style="display: none;">(Yaitu) jalan orang-orang yang telah Engkau beri nikmat kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan (pula jalan) mereka yang sesat.<a class="myBtn_multi" style="cursor:pointer;color:red;">&nbsp;¹</a><br />
+                                    <div  class="modal1 modal_multi w3-card-8">
+                                        <div class="modal-content1">
+                                            <span style="font-size:14px;font-weight:bolder;">Footnote 1:7 (1):</span><span class="close close_multi" style="float:right;">🅧</span>
+                                            <br />Mereka yang dimurkai, adalah mereka yang sengaja menentang ajaran Islam. Mereka yang sesat adalah yang sengaja mengambil jalan lain selain ajaran Islam.
+                                        </div>
+                                    </div>
+                                </h4>
                                 <span class="translation hide" style="display: none;"></span>
                             </div>
                         </div>
@@ -558,7 +743,7 @@
                     <div id="surahOption" style="display: none;"><br />
 
                         <a class="button myBtn_multi" style="font-size: 16px;width:100%;margin-bottom: 20px;margin-top: -5px;margin-bottom: 23px;cursor:pointer;">Play Surah</a>
-                        <div  class="modal1 modal_multi">
+                        <div  class="modal1 modal_multi w3-animate-top">
                             <div class="repeat-form modal-content1 w3-border w3-round-xlarge w3-padding-large" style="max-width: 1128px; margin: auto;">
                                 <div class="button w3-border w3-round-large" style="font-size: 16px;width:100%;margin-bottom: 20px;cursor:default;">Verse Repeater</div>
                                 <div class="w3-margin-top">
