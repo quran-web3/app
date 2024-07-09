@@ -1,4 +1,615 @@
-var _0x4e6cd4=_0x45a2;(function(_0x4b54c5,_0x3163bf){var _0x301408=_0x45a2,_0x38b755=_0x4b54c5();while(!![]){try{var _0x5a0e3c=parseInt(_0x301408(0x10a))/0x1+-parseInt(_0x301408(0x1e4))/0x2*(-parseInt(_0x301408(0x176))/0x3)+parseInt(_0x301408(0x154))/0x4+-parseInt(_0x301408(0x131))/0x5+-parseInt(_0x301408(0x10b))/0x6+parseInt(_0x301408(0x1b1))/0x7+-parseInt(_0x301408(0x175))/0x8;if(_0x5a0e3c===_0x3163bf)break;else _0x38b755['push'](_0x38b755['shift']());}catch(_0x2e9a70){_0x38b755['push'](_0x38b755['shift']());}}}(_0x29f3,0x46b72));const toggleSwitch=document[_0x4e6cd4(0x14b)](_0x4e6cd4(0x110)),currentTheme=localStorage[_0x4e6cd4(0x186)]('theme');currentTheme?(document[_0x4e6cd4(0x1fa)]['setAttribute'](_0x4e6cd4(0x1f3),currentTheme),currentTheme===_0x4e6cd4(0x1d0)&&(toggleSwitch[_0x4e6cd4(0x1d4)]=!![])):window[_0x4e6cd4(0x190)]&&window[_0x4e6cd4(0x190)]('(prefers-color-scheme:\x20dark)')[_0x4e6cd4(0x1c5)]?(document[_0x4e6cd4(0x1fa)][_0x4e6cd4(0x184)](_0x4e6cd4(0x1f3),'dark'),localStorage[_0x4e6cd4(0x1f6)](_0x4e6cd4(0x18c),_0x4e6cd4(0x1d0)),toggleSwitch[_0x4e6cd4(0x1d4)]=!![]):(document['documentElement'][_0x4e6cd4(0x184)]('data-theme',_0x4e6cd4(0x196)),localStorage['setItem'](_0x4e6cd4(0x18c),_0x4e6cd4(0x196)),toggleSwitch['checked']=![]);function switchTheme(_0x545dd5){var _0x3ccb4f=_0x4e6cd4;_0x545dd5['target'][_0x3ccb4f(0x1d4)]?(document[_0x3ccb4f(0x1fa)][_0x3ccb4f(0x184)](_0x3ccb4f(0x1f3),_0x3ccb4f(0x1d0)),localStorage[_0x3ccb4f(0x1f6)](_0x3ccb4f(0x18c),_0x3ccb4f(0x1d0))):(document[_0x3ccb4f(0x1fa)][_0x3ccb4f(0x184)](_0x3ccb4f(0x1f3),'light'),localStorage[_0x3ccb4f(0x1f6)]('theme','light'));}toggleSwitch[_0x4e6cd4(0x1f0)]('change',switchTheme,![]),!(function(){var _0x48f25d=_0x4e6cd4;const _0xbe899e=document,_0x5291fe=_0xbe899e[_0x48f25d(0x1fa)],_0x3bb771=_0xbe899e[_0x48f25d(0x160)],_0x3b45a9=_0xbe899e[_0x48f25d(0x14b)](_0x48f25d(0x110)),_0x30ef35=window['sr']=ScrollReveal();function _0xb499e8(){var _0x2e43e9=_0x48f25d;let _0x5614f8=_0x3b45a9[_0x2e43e9(0x1ec)][_0x2e43e9(0x185)](_0x2e43e9(0x213));_0x3b45a9['checked']?(_0x3bb771[_0x2e43e9(0x103)][_0x2e43e9(0x200)]('lights-off'),_0x5614f8&&(_0x5614f8[_0x2e43e9(0x1c9)]=_0x2e43e9(0x1d0))):(_0x3bb771[_0x2e43e9(0x103)][_0x2e43e9(0x1df)](_0x2e43e9(0x162)),_0x5614f8&&(_0x5614f8[_0x2e43e9(0x1c9)]='light'));}_0x5291fe['classList'][_0x48f25d(0x200)](_0x48f25d(0x142)),_0x5291fe[_0x48f25d(0x103)][_0x48f25d(0x1df)]('js'),window[_0x48f25d(0x1f0)](_0x48f25d(0x161),function(){var _0xc090b9=_0x48f25d;_0x3bb771[_0xc090b9(0x103)][_0xc090b9(0x1df)](_0xc090b9(0x165));}),_0x3bb771['classList'][_0x48f25d(0x171)]('has-animations')&&window[_0x48f25d(0x1f0)]('load',function(){var _0x522a7d=_0x48f25d;_0x30ef35[_0x522a7d(0x15b)]('.feature',{'reset':!![],'duration':0x258,'easing':_0x522a7d(0x211),'origin':_0x522a7d(0x19d),'distance':_0x522a7d(0x114),'viewFactor':0.2}),_0x30ef35['reveal'](_0x522a7d(0x1e8),{'reset':!![],'duration':0x258,'easing':'cubic-bezier(0.215,\x200.61,\x200.355,\x201)','origin':'left','distance':'75px','viewFactor':0.2}),_0x30ef35[_0x522a7d(0x15b)]('.feature2',{'reset':!![],'duration':0x190,'easing':_0x522a7d(0x211),'origin':_0x522a7d(0x16e),'distance':_0x522a7d(0x114),'viewFactor':0.2}),_0x30ef35['reveal'](_0x522a7d(0x13b),{'reset':!![],'duration':0x190,'easing':_0x522a7d(0x211),'origin':'left','distance':_0x522a7d(0x114),'viewFactor':0.2}),_0x30ef35[_0x522a7d(0x15b)](_0x522a7d(0x141),{'reset':!![],'duration':0x190,'easing':_0x522a7d(0x211),'origin':'right','distance':_0x522a7d(0x114),'viewFactor':0.2}),_0x30ef35[_0x522a7d(0x15b)](_0x522a7d(0x1d3),{'reset':!![],'duration':0x190,'easing':_0x522a7d(0x211),'origin':'bottom','distance':'75px','viewFactor':0.2}),_0x30ef35[_0x522a7d(0x15b)](_0x522a7d(0x15c),{'reset':!![],'duration':0x258,'easing':'cubic-bezier(0.215,\x200.61,\x200.355,\x201)','scale':1.2,'viewFactor':0.2});}),_0x3b45a9&&(window[_0x48f25d(0x1f0)](_0x48f25d(0x161),_0xb499e8),_0x3b45a9[_0x48f25d(0x1f0)]('change',_0xb499e8));}());function toggleTranslation(){var _0x1de614=_0x4e6cd4,_0x511b22=document[_0x1de614(0x14b)]('translationToggle'),_0x5b8e90=_0x511b22[_0x1de614(0x158)],_0x4c8ac6=document[_0x1de614(0x1a4)](_0x1de614(0x1d1));_0x4c8ac6[_0x1de614(0x125)](function(_0x4e4cde){var _0x8312b2=_0x1de614;_0x4e4cde[_0x8312b2(0x19a)][_0x8312b2(0x195)]=_0x8312b2(0x1ea);});var _0x4d2a35=document[_0x1de614(0x1a4)]('.'+_0x5b8e90);_0x4d2a35['forEach'](function(_0x265700){var _0x5337ae=_0x1de614;_0x265700[_0x5337ae(0x19a)][_0x5337ae(0x195)]='block';}),localStorage[_0x1de614(0x1f6)](_0x1de614(0x1b8),_0x5b8e90);}function loadTranslationPreference(){var _0x412eb7=_0x4e6cd4,_0xd7539b=localStorage[_0x412eb7(0x186)](_0x412eb7(0x1b8));_0xd7539b&&(document[_0x412eb7(0x14b)](_0x412eb7(0x144))['value']=_0xd7539b,toggleTranslation());}window[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x161),function(){loadTranslationPreference();});var audioPlayers=document[_0x4e6cd4(0x1a4)](_0x4e6cd4(0x188));function togglePlayPause(_0x11adcb){var _0x1f350f=_0x4e6cd4,_0x53d7cc=document[_0x1f350f(0x14b)](_0x11adcb),_0x1afa26=_0x53d7cc[_0x1f350f(0x168)],_0x110c06=_0x1afa26[_0x1f350f(0x14f)](_0x1f350f(0x153))[_0x1f350f(0x185)](_0x1f350f(0x1f7));if(_0x53d7cc[_0x1f350f(0x113)]){_0x53d7cc[_0x1f350f(0x1b4)](),_0x1afa26[_0x1f350f(0x1c9)]=_0x1f350f(0x1b0),_0x1afa26[_0x1f350f(0x184)]('data-title',_0x1f350f(0x20e));if(_0x110c06)_0x110c06[_0x1f350f(0x11d)]=_0x1f350f(0x20e);}else{_0x53d7cc['pause'](),_0x1afa26[_0x1f350f(0x1c9)]=_0x1f350f(0x1ee),_0x1afa26[_0x1f350f(0x184)](_0x1f350f(0x202),_0x1f350f(0x1f8));if(_0x110c06)_0x110c06['innerText']=_0x1f350f(0x1f8);}_0x53d7cc[_0x1f350f(0x1f0)](_0x1f350f(0x12c),function(){var _0x402eef=_0x1f350f;_0x1afa26[_0x402eef(0x1c9)]=_0x402eef(0x1ee),_0x1afa26[_0x402eef(0x184)]('data-title',_0x402eef(0x1f8));if(_0x110c06)_0x110c06['innerText']='Play';});}function setPlayPauseTitle(){var _0x232a16=_0x4e6cd4,_0x228637=document['querySelectorAll'](_0x232a16(0x10f));_0x228637[_0x232a16(0x125)](function(_0x4d303e){var _0x495f64=_0x232a16;_0x4d303e[_0x495f64(0x1f0)](_0x495f64(0x164),function(){var _0x2bf173=_0x495f64,_0x2d9ec0=_0x4d303e[_0x2bf173(0x185)]('i'),_0x5edcc7=_0x4d303e[_0x2bf173(0x14f)]('.circle-inner')[_0x2bf173(0x185)]('.tooltip');if(_0x2d9ec0['classList'][_0x2bf173(0x171)]('fa-play')){_0x4d303e['setAttribute'](_0x2bf173(0x202),'Play');if(_0x5edcc7)_0x5edcc7[_0x2bf173(0x11d)]=_0x2bf173(0x1f8);}else{_0x4d303e[_0x2bf173(0x184)](_0x2bf173(0x202),_0x2bf173(0x20e));if(_0x5edcc7)_0x5edcc7['innerText']='Pause';}});});}audioPlayers['forEach'](function(_0x4cefc4){var _0x44dc3f=_0x4e6cd4,_0x435cae=_0x4cefc4[_0x44dc3f(0x168)];_0x435cae[_0x44dc3f(0x103)]['add']('play-pause-icon'),_0x435cae[_0x44dc3f(0x1c9)]=_0x44dc3f(0x1ee);}),setPlayPauseTitle();var maxZoomIn=0x5,maxZoomOut=0x5,defaultFontSizeH1=0x26,defaultFontSizeH2=0x2d;function getFontSize(_0x49272e){var _0x158025=_0x4e6cd4;return parseInt(window[_0x158025(0x14e)](_0x49272e)[_0x158025(0x18b)]);}function zoomIn(){var _0x5342a7=_0x4e6cd4,_0x4eb92d=document[_0x5342a7(0x149)](_0x5342a7(0x1ef)),_0x2d397d=document[_0x5342a7(0x149)]('h2-with-tajweed');for(var _0x1a2f65=0x0;_0x1a2f65<_0x4eb92d['length'];_0x1a2f65++){var _0x450985=getFontSize(_0x4eb92d[_0x1a2f65]);_0x450985<defaultFontSizeH1+0x2*maxZoomIn&&(_0x4eb92d[_0x1a2f65][_0x5342a7(0x19a)][_0x5342a7(0x18b)]=_0x450985+0x2+'px',localStorage['setItem']('fontSizeh1',_0x450985+0x2));}for(var _0x1a2f65=0x0;_0x1a2f65<_0x2d397d['length'];_0x1a2f65++){var _0x450985=getFontSize(_0x2d397d[_0x1a2f65]);_0x450985<defaultFontSizeH2+0x2*maxZoomIn&&(_0x2d397d[_0x1a2f65][_0x5342a7(0x19a)][_0x5342a7(0x18b)]=_0x450985+0x2+'px',localStorage[_0x5342a7(0x1f6)](_0x5342a7(0x140),_0x450985+0x2));}}function zoomOut(){var _0x19148e=_0x4e6cd4,_0x17176a=document['getElementsByClassName'](_0x19148e(0x1ef)),_0x31af8a=document['getElementsByClassName']('h2-with-tajweed');for(var _0x57458f=0x0;_0x57458f<_0x17176a[_0x19148e(0x1bb)];_0x57458f++){var _0x3b729e=getFontSize(_0x17176a[_0x57458f]);_0x3b729e>defaultFontSizeH1-0x2*maxZoomOut&&(_0x17176a[_0x57458f][_0x19148e(0x19a)][_0x19148e(0x18b)]=_0x3b729e-0x2+'px',localStorage[_0x19148e(0x1f6)](_0x19148e(0x1a2),_0x3b729e-0x2));}for(var _0x57458f=0x0;_0x57458f<_0x31af8a[_0x19148e(0x1bb)];_0x57458f++){var _0x3b729e=getFontSize(_0x31af8a[_0x57458f]);_0x3b729e>defaultFontSizeH2-0x2*maxZoomOut&&(_0x31af8a[_0x57458f]['style'][_0x19148e(0x18b)]=_0x3b729e-0x2+'px',localStorage['setItem']('fontSizeh2',_0x3b729e-0x2));}}function resetSize(){var _0xcc7201=_0x4e6cd4;localStorage[_0xcc7201(0x1f6)](_0xcc7201(0x1a2),defaultFontSizeH1),localStorage[_0xcc7201(0x1f6)](_0xcc7201(0x140),defaultFontSizeH2),changeFontSize(_0xcc7201(0x1ef),defaultFontSizeH1),changeFontSize('h2-with-tajweed',defaultFontSizeH2);}function _0x45a2(_0x6e3c7e,_0x2da785){var _0x29f3cf=_0x29f3();return _0x45a2=function(_0x45a224,_0x365ee4){_0x45a224=_0x45a224-0x103;var _0x56d91c=_0x29f3cf[_0x45a224];return _0x56d91c;},_0x45a2(_0x6e3c7e,_0x2da785);}function changeFontSize(_0x5148a9,_0x5d9eeb){var _0x558057=_0x4e6cd4,_0x429ce8=document[_0x558057(0x149)](_0x5148a9);for(var _0x5559a0=0x0;_0x5559a0<_0x429ce8[_0x558057(0x1bb)];_0x5559a0++){_0x429ce8[_0x5559a0][_0x558057(0x19a)][_0x558057(0x18b)]=_0x5d9eeb+'px';}}document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){var _0x5e4591=_0x4e6cd4,_0x283202=localStorage[_0x5e4591(0x186)]('fontSizeh1'),_0x1b09d2=localStorage[_0x5e4591(0x186)](_0x5e4591(0x140));_0x283202?changeFontSize(_0x5e4591(0x1ef),_0x283202):changeFontSize('h1-without-tajweed',defaultFontSizeH1),_0x1b09d2?changeFontSize(_0x5e4591(0x126),_0x1b09d2):changeFontSize('h2-with-tajweed',defaultFontSizeH2);});function toggleView(_0x2a912e){var _0x362d76=_0x4e6cd4;if(_0x2a912e===_0x362d76(0x106))document['getElementById']('pageOption')[_0x362d76(0x19a)][_0x362d76(0x195)]=_0x362d76(0x20a),document[_0x362d76(0x14b)](_0x362d76(0x1ce))[_0x362d76(0x19a)][_0x362d76(0x195)]=_0x362d76(0x1ea),document['getElementById'](_0x362d76(0x205))[_0x362d76(0x103)][_0x362d76(0x1df)]('active'),document[_0x362d76(0x14b)](_0x362d76(0x216))[_0x362d76(0x103)]['remove'](_0x362d76(0x1bf));else _0x2a912e===_0x362d76(0x11e)&&(document[_0x362d76(0x14b)](_0x362d76(0x177))[_0x362d76(0x19a)][_0x362d76(0x195)]=_0x362d76(0x1ea),document[_0x362d76(0x14b)](_0x362d76(0x1ce))[_0x362d76(0x19a)][_0x362d76(0x195)]=_0x362d76(0x20a),document[_0x362d76(0x14b)](_0x362d76(0x205))['classList']['remove'](_0x362d76(0x1bf)),document[_0x362d76(0x14b)](_0x362d76(0x216))['classList']['add']('active'));}function _0x29f3(){var _0x345e43=['Cancel','Copied!','body','load','lights-off','onclick','mouseenter','is-loaded','DOMContentLoaded','data-id','nextElementSibling','page-container','ID:\x20','.bookmark-btn','toggle','info','top','key','.myBtn_multi,\x20.modal1,\x20.modal_multi','contains','parse','tajweedPreference','scroll','1041912taGcMh','6693qseRmI','pageOption','preventDefault','.myBtn_multi','</p>','fas','fire','<h3\x20style=\x22font-size:\x2030px;font-weight:\x20bold;\x22>Select\x20Reciter</h3><br\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22w3-btn\x20w3-black-white\x20w3-round-large\x20w3-border-3\x22\x20id=\x22reciterSelect\x22\x20style=\x22margin-right:\x205px;\x20cursor:\x20pointer;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.modal_multi','Open\x20My\x20Note','\x27)\x22\x20class=\x22social-btn\x22><i\x20class=\x22fab\x20fa-twitter\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22share(\x27whatsapp\x27,\x20\x27','scrollIntoView','textContent','<option\x20value=\x22','setAttribute','querySelector','getItem','menuContainer','audio','<i\x20class=\x22fas\x20fa-copy\x22></i>','width','fontSize','theme','s\x20svg-text-anim\x20','High','No\x20tafsir\x20found\x20for\x20this\x20verse.','matchMedia','../dist/html/toggle.html','TextChanged:','w3-show','reciterIcon','display','light','quran-web3.nft','far','\x27)\x22\x20class=\x22social-btn\x22><i\x20class=\x22fab\x20fa-facebook\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22share(\x27twitter\x27,\x20\x27','style','.circle-inner-main,\x20.circle-inner','play-','right','backToTop','Bookmarked!','Verse\x20Not\x20Found','splice','fontSizeh1','DOM\x20Loaded','querySelectorAll','<i\x20class=\x22far\x20fa-copy\x22></i>','tajweedToggle','toggle-container','<p>','Bookmark','dismiss','getAttribute','w3-sidenav','rgb(255,\x20255,\x20255)','removeItem','pathname','<i\x20class=\x22fas\x20fa-pause\x22></i>','3802169hoChvJ','result','Elements:','play','.copy-btn','.circle-container','.share-btn','translationPreference','join','Original\x20Text:','length','<h3>Note\x20for\x20','replace','bookmarks','active','.w3-overlay','Hide','note-','split','fa-minus','matches','div',',\x20Result:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22share(\x27facebook\x27,\x20\x27','innerHTML','confirmButtonText','<i\x20class=\x22fas\x20fa-share\x22></i>','catch','tooltip','surahOption','show','dark','.translation','getTotalLength','.feature5','checked','Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20note?','Enter\x20your\x20notes\x20here...','removeEventListener','<h3>Warning!</h3><p>This\x20is\x20Not\x20the\x20Original,\x20This\x20Copy\x20of\x20the\x20Web3\x20Quran\x20Text\x20Has\x20Been\x20Altered!</p>','<h3>Note\x20deleted\x20successfully!</h3>','Save\x20Note','color','isConfirmed','target','stroke-dasharray','add','h4.translation','start','fa-plus','data-verse-id','136eLmKiv','.html','Please\x20enter\x20a\x20note\x20before\x20saving.','enabled','.feature1','<h3>Note\x20saved\x20successfully!</h3>','none','scrollTo','parentNode','push','<i\x20class=\x22fas\x20fa-play\x22></i>','h1-without-tajweed','addEventListener','</option>','.note-btn','data-theme','<h3>Note\x20not\x20saved.</h3>','function','setItem','.tooltip','Play','forwards','documentElement','stringify','.w3-centered[title=\x22quran-web3.nft\x22]','More','stroke-width','Write\x20Note','remove','tafsir-content-','data-title','cancel','match','pageButton','translationDropdown','https://www.facebook.com/sharer/sharer.php?u=','\x27)\x22\x20class=\x22social-btn\x22><i\x20class=\x22fab\x20fa-whatsapp\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22share(\x27telegram\x27,\x20\x27','</h3><br\x20/>','block','https://telegram.me/share/url?text=','.circle-inner.myBtn_multi','error','Pause','stopPropagation','showCancelButton','cubic-bezier(0.215,\x200.61,\x200.355,\x201)','<i\x20class=\x22far\x20fa-bookmark\x22></i>','.label-text','.modal','selectedReciter','surahButton','<h3>Selected\x20Reciter:\x20','trim','Copy','origin','animation','classList','path','instant','page','json','.circle-inner-main','Processed\x20Data:','83502KQEpVn','1947378glrHMo','includes','\x27)\x22\x20class=\x22social-btn\x22><i\x20class=\x22fab\x20fa-telegram\x22></i></button>\x0a\x20\x20\x20\x20','searchInput','.play-pause-icon','lights-toggle','keydown','<h3>Oops...</h3>','paused','75px','text','change','map','hidden','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22button\x22\x20class=\x22swal-button\x20swal-button--delete\x20cursor-pointer\x20social-btn\x22><i\x20class=\x22fas\x20fa-trash\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','https://twitter.com/intent/tweet?text=','fa-sticky-note','<i\x20class=\x22fas\x20fa-bookmark\x22></i>','innerText','surah','modal-','.h1-without-tajweed','</h3>','Animating\x20Results...','success','scrollHeight','forEach','h2-with-tajweed','className','_blank','pause','location','selected','ended','open','.progress-bar\x20.progress','warning','.swal-button--delete','404860mNHbwv','swal2-title','infinite','stroke-dashoffset','.w3-sidenav','Could\x20not\x20copy\x20text:\x20','click','log','.close_multi','<h3>Delete\x20Note\x20for\x20','.feature3','w3-overlay','then','data-verse','https://api.whatsapp.com/send?text=','fontSizeh2','.feature4','no-js','innerHeight','translationToggle','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','<h3>','a[data-page=\x22','modal-open','getElementsByClassName','menuIcon','getElementById','random','footer','getComputedStyle','closest','.note-btn[onclick*=\x22','Enter','createElement','.circle-inner','188188brBuSb','swal-button--delete','scrollY','reciterSelect','value','clipboard','fa-clipboard','reveal','.feature6','Error\x20loading\x20tafsir:'];_0x29f3=function(){return _0x345e43;};return _0x29f3();}function w3_open(){var _0x1bc172=_0x4e6cd4;document[_0x1bc172(0x149)]('w3-sidenav')[0x0]['style'][_0x1bc172(0x195)]=_0x1bc172(0x20a),document[_0x1bc172(0x149)]('w3-overlay')[0x0][_0x1bc172(0x19a)][_0x1bc172(0x195)]='block';}function w3_close(){var _0x15f819=_0x4e6cd4;document[_0x15f819(0x149)](_0x15f819(0x1ac))[0x0][_0x15f819(0x19a)][_0x15f819(0x195)]=_0x15f819(0x1ea),document[_0x15f819(0x149)](_0x15f819(0x13c))[0x0][_0x15f819(0x19a)][_0x15f819(0x195)]=_0x15f819(0x1ea);}function toggleBookmark(_0x34a380,_0x3a1db5){var _0x2daf6c=_0x4e6cd4,_0x1c953d=JSON['parse'](localStorage[_0x2daf6c(0x186)](_0x2daf6c(0x1be)))||{};!_0x1c953d[_0x34a380]&&(_0x1c953d[_0x34a380]=[]);var _0x1877f7=_0x1c953d[_0x34a380]['indexOf'](_0x3a1db5);_0x1877f7===-0x1?_0x1c953d[_0x34a380][_0x2daf6c(0x1ed)](_0x3a1db5):_0x1c953d[_0x34a380][_0x2daf6c(0x1a1)](_0x1877f7,0x1),localStorage['setItem'](_0x2daf6c(0x1be),JSON[_0x2daf6c(0x1fb)](_0x1c953d)),updateBookmarkButtons();}function getBookmarks(){var _0x3317de=_0x4e6cd4;return JSON[_0x3317de(0x172)](localStorage[_0x3317de(0x186)](_0x3317de(0x1be)))||{};}function updateBookmarkButton(_0x299fc1,_0xd32d9d){var _0x5685dd=_0x4e6cd4,_0x271c9f=getBookmarks(),_0x4fe61c=_0x271c9f[getPageNumber()]&&_0x271c9f[getPageNumber()][_0x5685dd(0x10c)](_0xd32d9d),_0x1ef26b=_0x299fc1[_0x5685dd(0x14f)](_0x5685dd(0x153))[_0x5685dd(0x185)]('.tooltip');if(_0x4fe61c){_0x299fc1[_0x5685dd(0x1c9)]=_0x5685dd(0x11c),_0x299fc1['setAttribute']('data-title','Bookmarked!');if(_0x1ef26b)_0x1ef26b[_0x5685dd(0x11d)]=_0x5685dd(0x19f);_0x299fc1[_0x5685dd(0x19a)][_0x5685dd(0x1db)]=_0x5685dd(0x1ad);}else{_0x299fc1[_0x5685dd(0x1c9)]=_0x5685dd(0x212),_0x299fc1[_0x5685dd(0x184)](_0x5685dd(0x202),'Bookmark');if(_0x1ef26b)_0x1ef26b['innerText']=_0x5685dd(0x1a9);_0x299fc1['style'][_0x5685dd(0x1db)]=_0x5685dd(0x1ad);}}function updateBookmarkButtons(){var _0x47fb22=_0x4e6cd4,_0x1356d7=document[_0x47fb22(0x1a4)](_0x47fb22(0x16b));_0x1356d7[_0x47fb22(0x125)](function(_0x424a89){var _0x5b1cc5=_0x47fb22,_0x58c01f=_0x424a89[_0x5b1cc5(0x1ab)](_0x5b1cc5(0x167));updateBookmarkButton(_0x424a89,_0x58c01f);});}updateBookmarkButtons();var bookmarkButtons=document[_0x4e6cd4(0x1a4)]('.bookmark-btn');bookmarkButtons['forEach'](function(_0x384588){var _0x126711=_0x4e6cd4,_0x762ec9=_0x384588[_0x126711(0x1ab)]('data-id');_0x384588[_0x126711(0x1f0)](_0x126711(0x137),function(){toggleBookmark(getPageNumber(),_0x762ec9);});});function getPageNumber(){var _0x2ef085=_0x4e6cd4,_0x10cf00=window['location']['pathname'][_0x2ef085(0x1c3)]('/');return parseInt(_0x10cf00[_0x10cf00['length']-0x1][_0x2ef085(0x1c3)]('.')[0x0]);}function updateBookmarkButtons(){var _0x380cd5=_0x4e6cd4,_0xe25aaa=document[_0x380cd5(0x1a4)](_0x380cd5(0x16b));_0xe25aaa[_0x380cd5(0x125)](function(_0x5f2386){var _0x30e183=_0x380cd5,_0x5cd5ba=_0x5f2386[_0x30e183(0x1ab)](_0x30e183(0x167));updateBookmarkButton(_0x5f2386,_0x5cd5ba);});}document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){var _0x5d52a1=_0x4e6cd4;document[_0x5d52a1(0x14b)]('searchInput')[_0x5d52a1(0x1f0)](_0x5d52a1(0x111),function(_0x59d9f1){var _0x552a2a=_0x5d52a1;_0x59d9f1[_0x552a2a(0x16f)]===_0x552a2a(0x151)&&(_0x59d9f1[_0x552a2a(0x178)](),searchVerse());});});function searchVerse(){var _0x94e6b2=_0x4e6cd4,_0x38697d=document['getElementById'](_0x94e6b2(0x10e))[_0x94e6b2(0x158)][_0x94e6b2(0x218)](),_0x1c3df5=document[_0x94e6b2(0x14b)](_0x38697d);_0x1c3df5?_0x1c3df5[_0x94e6b2(0x181)]({'behavior':'smooth'}):Swal[_0x94e6b2(0x17c)]({'html':_0x94e6b2(0x1a0),'icon':_0x94e6b2(0x20d),'confirmButtonText':'OK'});}(function(){var _0x527c43=_0x4e6cd4;function _0x5a87eb(){let _0x1a488b=_0x2bf3b6(),_0xfa0e9b=_0x4a7004(_0x1a488b);_0x218b16(_0xfa0e9b),_0xe2bf81(_0xfa0e9b);}function _0x2bf3b6(){let _0x1d7ac0=[];for(let _0x1ca240=0x0;_0x1ca240<0x3e8;_0x1ca240++){_0x1d7ac0['push']({'id':_0x1ca240,'value':Math['random']()*0x64});}return _0x1d7ac0;}function _0x4a7004(_0x1fa528){var _0x40307b=_0x45a2;let _0x3649c5=[];for(let _0x32414b of _0x1fa528){_0x32414b[_0x40307b(0x158)]>0x32?_0x3649c5[_0x40307b(0x1ed)]({'id':_0x32414b['id'],'result':_0x40307b(0x18e)}):_0x3649c5[_0x40307b(0x1ed)]({'id':_0x32414b['id'],'result':'Low'});}return _0x3649c5;}function _0x218b16(_0x296c70){var _0x39c4bc=_0x45a2;console['log']('Processed\x20Data:');for(let _0x2d0f84 of _0x296c70){console[_0x39c4bc(0x138)](_0x39c4bc(0x16a)+_0x2d0f84['id']+_0x39c4bc(0x1c7)+_0x2d0f84['result']);}}function _0xe2bf81(_0x3b7cf8){var _0x2d475b=_0x45a2;console[_0x2d475b(0x138)](_0x2d475b(0x122));for(let _0xcc939e of _0x3b7cf8){}}document[_0x527c43(0x1f0)]('DOMContentLoaded',_0x5a87eb);}()),document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){setupCopyButtons();});function copyText(_0x2b5e6b,_0x200228){var _0x1e88ff=_0x4e6cd4,_0x33510d=document['getElementById'](_0x200228),_0x23f2db=_0x33510d[_0x1e88ff(0x185)]('h1')[_0x1e88ff(0x182)],_0x40987f='',_0x342b7d=_0x33510d[_0x1e88ff(0x1a4)](_0x1e88ff(0x1e0));_0x342b7d[_0x1e88ff(0x125)](function(_0x54c8de){var _0x243cdc=_0x1e88ff;if(_0x54c8de[_0x243cdc(0x19a)]['display']!==_0x243cdc(0x1ea)){var _0x521ab8=_0x54c8de['cloneNode'](!![]),_0x57d3b0=_0x521ab8[_0x243cdc(0x1a4)](_0x243cdc(0x170));_0x57d3b0[_0x243cdc(0x125)](function(_0x203e8d){var _0x414677=_0x243cdc;_0x203e8d[_0x414677(0x200)]();}),_0x40987f+=_0x521ab8['textContent']['trim']()+'\x0a';}}),_0x40987f=_0x40987f[_0x1e88ff(0x218)]();var _0x559d30=window['location'][_0x1e88ff(0x21a)]+window[_0x1e88ff(0x12a)][_0x1e88ff(0x1af)]+'#'+encodeURIComponent(_0x200228),_0x1fae40='Quran\x20Surah\x20'+_0x200228+'\x0a\x0a'+_0x23f2db+'\x0a\x0a'+_0x40987f+'\x0a\x0a'+_0x559d30;navigator[_0x1e88ff(0x159)]['writeText'](_0x1fae40)['then'](function(){var _0x4de20c=_0x1e88ff;_0x2b5e6b['setAttribute'](_0x4de20c(0x202),_0x4de20c(0x15f)),_0x2b5e6b[_0x4de20c(0x1c9)]=_0x4de20c(0x189);var _0x341464=_0x2b5e6b[_0x4de20c(0x14f)](_0x4de20c(0x153))[_0x4de20c(0x185)](_0x4de20c(0x1f7))||_0x2b5e6b['closest']('.circle-inner-main')[_0x4de20c(0x185)]('.tooltip');if(_0x341464)_0x341464[_0x4de20c(0x11d)]='Copied!';setTimeout(function(){var _0x39e1cc=_0x4de20c;_0x2b5e6b['setAttribute'](_0x39e1cc(0x202),_0x39e1cc(0x219)),_0x2b5e6b['innerHTML']=_0x39e1cc(0x1a5);if(_0x341464)_0x341464[_0x39e1cc(0x11d)]=_0x39e1cc(0x219);},0x7d0);},function(_0x4a7d0c){var _0x2916d4=_0x1e88ff;console['error'](_0x2916d4(0x136),_0x4a7d0c);});}function openShareModal(_0x2f7e33){var _0x174cb4=_0x4e6cd4,_0x1a09da=document[_0x174cb4(0x14b)](_0x2f7e33),_0x38c020=_0x1a09da[_0x174cb4(0x185)]('h1')[_0x174cb4(0x182)],_0x2298cf='',_0x400587=_0x1a09da[_0x174cb4(0x1a4)](_0x174cb4(0x1e0));_0x400587[_0x174cb4(0x125)](function(_0x19114d){var _0x5744f7=_0x174cb4;if(_0x19114d['style']['display']!=='none'){var _0x1e9ccb=_0x19114d['cloneNode'](!![]),_0x320e0=_0x1e9ccb[_0x5744f7(0x1a4)](_0x5744f7(0x170));_0x320e0[_0x5744f7(0x125)](function(_0x22daf3){_0x22daf3['remove']();}),_0x2298cf+=_0x1e9ccb[_0x5744f7(0x182)][_0x5744f7(0x218)]()+'\x0a';}}),_0x2298cf=_0x2298cf[_0x174cb4(0x218)]();var _0x144bb2=window[_0x174cb4(0x12a)]['origin']+window['location']['pathname']+'#'+encodeURIComponent(_0x2f7e33),_0x5b4594='Quran\x20Surah\x20'+_0x2f7e33+'\x0a\x0a'+_0x38c020+'\x0a\x0a'+_0x2298cf+'\x0a\x0a'+_0x144bb2,_0x122eb7=encodeURIComponent(_0x5b4594),_0xb7a5b3=_0x174cb4(0x1c8)+_0x122eb7+_0x174cb4(0x199)+_0x122eb7+_0x174cb4(0x180)+_0x122eb7+_0x174cb4(0x208)+_0x122eb7+_0x174cb4(0x10d);Swal[_0x174cb4(0x17c)]({'html':'<h3\x20style=\x22font-size:\x2030px;\x22>SHARE</h3><h3>Quran\x20Surah\x20'+_0x2f7e33+_0x174cb4(0x209)+_0xb7a5b3,'showCloseButton':!![],'showCancelButton':![],'focusConfirm':![],'customClass':{'popup':'social-modal'}});}function share(_0x54e74c,_0x2c75bb){var _0x3d2a1d=_0x4e6cd4;let _0x1988b5='';switch(_0x54e74c){case'facebook':_0x1988b5=_0x3d2a1d(0x207)+_0x2c75bb;break;case'twitter':_0x1988b5=_0x3d2a1d(0x11a)+_0x2c75bb;break;case'whatsapp':_0x1988b5=_0x3d2a1d(0x13f)+_0x2c75bb;break;case'telegram':_0x1988b5=_0x3d2a1d(0x20b)+_0x2c75bb;break;default:return;}window[_0x3d2a1d(0x12d)](_0x1988b5,_0x3d2a1d(0x128));}document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){setupCopyButtons();});function setupCopyButtons(){var _0x55412f=_0x4e6cd4,_0x2de936=document[_0x55412f(0x1a4)](_0x55412f(0x1b5));_0x2de936[_0x55412f(0x125)](function(_0x58595a){var _0x176858=_0x55412f;_0x58595a[_0x176858(0x1c9)]=_0x176858(0x1a5),_0x58595a['addEventListener']('click',function(){var _0x33c2fb=_0x176858,_0x5581dc=_0x58595a[_0x33c2fb(0x1ab)](_0x33c2fb(0x1e3));copyText(_0x58595a,_0x5581dc);});});var _0x19f85a=document[_0x55412f(0x1a4)](_0x55412f(0x1b7));_0x19f85a[_0x55412f(0x125)](function(_0x51fb01){var _0x309777=_0x55412f;_0x51fb01[_0x309777(0x1c9)]=_0x309777(0x1cb),_0x51fb01[_0x309777(0x1f0)]('click',function(){var _0x28c3a9=_0x309777,_0x294691=_0x51fb01[_0x28c3a9(0x1ab)](_0x28c3a9(0x1e3));openShareModal(_0x294691);});});}(function(){var _0x5470fb=_0x4e6cd4;function _0x537b83(){let _0x2f8bf0=_0x4527d0(),_0x20d472=_0x156a3c(_0x2f8bf0);_0x3e1419(_0x20d472);}function _0x4527d0(){var _0x2f5e1e=_0x45a2;let _0x4663f8=[];for(let _0x1a3ff3=0x0;_0x1a3ff3<0x3e8;_0x1a3ff3++){_0x4663f8[_0x2f5e1e(0x1ed)]({'id':_0x1a3ff3,'value':Math[_0x2f5e1e(0x14c)]()*0x64});}return _0x4663f8;}function _0x156a3c(_0x427608){var _0x33a840=_0x45a2;let _0x4b3032=[];for(let _0x111a0e of _0x427608){_0x111a0e[_0x33a840(0x158)]>0x32?_0x4b3032[_0x33a840(0x1ed)]({'id':_0x111a0e['id'],'result':'High'}):_0x4b3032['push']({'id':_0x111a0e['id'],'result':'Low'});}return _0x4b3032;}function _0x3e1419(_0x5719e5){var _0x55671a=_0x45a2;console[_0x55671a(0x138)](_0x55671a(0x109));for(let _0x2d4450 of _0x5719e5){console[_0x55671a(0x138)](_0x55671a(0x16a)+_0x2d4450['id']+_0x55671a(0x1c7)+_0x2d4450[_0x55671a(0x1b2)]);}}document[_0x5470fb(0x1f0)](_0x5470fb(0x166),_0x537b83);}()),document[_0x4e6cd4(0x1f0)]('DOMContentLoaded',()=>{var _0xa8fe52=_0x4e6cd4;console[_0xa8fe52(0x138)](_0xa8fe52(0x1a3));const _0x2c0c66=_0xa8fe52(0x197);console['log'](_0xa8fe52(0x1ba),_0x2c0c66);const _0x11c395=document[_0xa8fe52(0x1a4)](_0xa8fe52(0x1fc));console['log'](_0xa8fe52(0x1b3),_0x11c395);let _0x49153a=![];_0x11c395[_0xa8fe52(0x1bb)]<0x12?_0x49153a=!![]:_0x11c395[_0xa8fe52(0x125)](_0x5999bb=>{var _0x189bc3=_0xa8fe52;_0x5999bb[_0x189bc3(0x11d)]!==_0x2c0c66&&(_0x49153a=!![]);}),console['log'](_0xa8fe52(0x192),_0x49153a),_0x49153a&&Swal[_0xa8fe52(0x17c)]({'html':_0xa8fe52(0x1d8),'icon':_0xa8fe52(0x20d),'confirmButtonText':'OK'});});function setTextAnimation(_0x34929b,_0x11840c,_0x385bd7,_0x4d1de6,_0x3c9aa3,_0x284b65){var _0x46cc58=_0x4e6cd4;let _0xa4a56a=document['querySelectorAll'](_0x46cc58(0x104)),_0x9901ec=_0x284b65?_0x46cc58(0x133):_0x46cc58(0x1f9);for(let _0x14ca89=0x0;_0x14ca89<_0xa4a56a[_0x46cc58(0x1bb)];_0x14ca89++){const _0x447b17=_0xa4a56a[_0x14ca89],_0x409a64=_0x447b17[_0x46cc58(0x1d2)]();_0x447b17['style'][_0x46cc58(0x134)]=_0x409a64+'px',_0x447b17['style'][_0x46cc58(0x1de)]=_0x409a64+'px',_0x447b17[_0x46cc58(0x19a)][_0x46cc58(0x1fe)]=_0x385bd7+'px',_0x447b17['style']['stroke']=''+_0x3c9aa3,_0x447b17[_0x46cc58(0x19a)][_0x46cc58(0x21b)]=_0x11840c+_0x46cc58(0x18d)+_0x9901ec+'\x20'+_0x4d1de6,_0x447b17[_0x46cc58(0x19a)]['animation-delay']=_0x14ca89*_0x34929b+'s';}}function openNoteModal(_0x57235d){var _0x2479fe=_0x4e6cd4,_0x195b15=localStorage[_0x2479fe(0x186)](_0x2479fe(0x1c2)+_0x57235d)||'',_0x1c8e87={'html':_0x2479fe(0x1bc)+_0x57235d+_0x2479fe(0x121),'input':'textarea','inputPlaceholder':_0x2479fe(0x1d6),'inputValue':_0x195b15,'showCancelButton':!![],'showLoaderOnConfirm':!![],'customClass':{'popup':document['body'][_0x2479fe(0x103)][_0x2479fe(0x171)](_0x2479fe(0x162))?'lights-off':'','title':_0x2479fe(0x132)},'preConfirm':_0x51629d=>{var _0x291e07=_0x2479fe;if(!_0x51629d[_0x291e07(0x218)]())return Swal['showValidationMessage'](_0x291e07(0x1e6)),![];saveNoteToStorage(_0x57235d,_0x51629d);}},_0x371583=_0x195b15[_0x2479fe(0x218)]()!=='';_0x371583?(_0x1c8e87[_0x2479fe(0x1ca)]=_0x2479fe(0x1da),_0x1c8e87[_0x2479fe(0x14d)]=_0x2479fe(0x119)):(_0x1c8e87['confirmButtonText']=_0x2479fe(0x1da),_0x1c8e87[_0x2479fe(0x210)]=!![]),Swal[_0x2479fe(0x17c)](_0x1c8e87)[_0x2479fe(0x13d)](_0x4d4519=>{var _0x407a68=_0x2479fe;if(_0x4d4519['isConfirmed'])Swal[_0x407a68(0x17c)]({'icon':_0x407a68(0x123),'html':_0x407a68(0x1e9),'showConfirmButton':![],'timer':0x5dc,'customClass':{'popup':document['body'][_0x407a68(0x103)][_0x407a68(0x171)](_0x407a68(0x162))?'lights-off':'','title':_0x407a68(0x132)}})[_0x407a68(0x13d)](()=>{updateCircleUI(_0x57235d);});else _0x4d4519[_0x407a68(0x1aa)]===Swal['DismissReason'][_0x407a68(0x203)]&&Swal[_0x407a68(0x17c)]({'icon':_0x407a68(0x16d),'html':_0x407a68(0x1f4),'showConfirmButton':![],'timer':0x5dc,'customClass':{'popup':document['body']['classList'][_0x407a68(0x171)](_0x407a68(0x162))?_0x407a68(0x162):'','title':_0x407a68(0x132)}});}),document[_0x2479fe(0x1f0)](_0x2479fe(0x137),function(_0x1267c3){var _0x373da0=_0x2479fe;(_0x1267c3['target'][_0x373da0(0x103)][_0x373da0(0x171)](_0x373da0(0x155))||_0x1267c3[_0x373da0(0x1dd)][_0x373da0(0x14f)](_0x373da0(0x130)))&&deleteNoteModal(_0x57235d);});}function saveNoteToStorage(_0x3075ca,_0x18042a){var _0x2c38ff=_0x4e6cd4;if(_0x18042a[_0x2c38ff(0x218)]()===''){Swal[_0x2c38ff(0x17c)]({'icon':'warning','html':_0x2c38ff(0x112),'text':_0x2c38ff(0x1e6),'customClass':{'popup':document[_0x2c38ff(0x160)][_0x2c38ff(0x103)]['contains'](_0x2c38ff(0x162))?'lights-off':'','title':_0x2c38ff(0x132)}});return;}localStorage['setItem'](_0x2c38ff(0x1c2)+_0x3075ca,_0x18042a[_0x2c38ff(0x218)]()),Swal[_0x2c38ff(0x17c)]({'icon':_0x2c38ff(0x123),'html':_0x2c38ff(0x1e9),'showConfirmButton':![],'timer':0x5dc,'customClass':{'popup':document['body']['classList']['contains'](_0x2c38ff(0x162))?_0x2c38ff(0x162):'','title':_0x2c38ff(0x132)}})[_0x2c38ff(0x13d)](()=>{updateCircleUI(_0x3075ca);});}function deleteNoteModal(_0x1b6683){var _0x498db9=_0x4e6cd4;Swal['fire']({'icon':_0x498db9(0x12f),'html':_0x498db9(0x13a)+_0x1b6683+'</h3>','text':_0x498db9(0x1d5),'showCancelButton':!![],'confirmButtonColor':'#d33','confirmButtonText':'Yes,\x20delete\x20it!','cancelButtonText':_0x498db9(0x15e),'customClass':{'popup':document['body'][_0x498db9(0x103)][_0x498db9(0x171)]('lights-off')?'lights-off':'','title':_0x498db9(0x132)}})[_0x498db9(0x13d)](_0x1d2fc3=>{var _0x262237=_0x498db9;_0x1d2fc3[_0x262237(0x1dc)]&&(localStorage[_0x262237(0x1ae)](_0x262237(0x1c2)+_0x1b6683),Swal['fire']({'icon':'success','html':_0x262237(0x1d9),'showConfirmButton':![],'timer':0x5dc,'customClass':{'popup':document[_0x262237(0x160)][_0x262237(0x103)]['contains'](_0x262237(0x162))?_0x262237(0x162):'','title':'swal2-title'}})[_0x262237(0x13d)](()=>{updateCircleUI(_0x1b6683);}));});}function updateCircleUI(_0x5e56a7){var _0x3ca643=_0x4e6cd4,_0x2ed930=localStorage['getItem'](_0x3ca643(0x1c2)+_0x5e56a7)!==null,_0x201e9a=document['querySelector'](_0x3ca643(0x150)+_0x5e56a7+'\x22]'),_0x3f9659=_0x201e9a[_0x3ca643(0x14f)](_0x3ca643(0x153))[_0x3ca643(0x185)](_0x3ca643(0x1f7))||_0x201e9a[_0x3ca643(0x14f)](_0x3ca643(0x108))[_0x3ca643(0x185)](_0x3ca643(0x1f7));if(_0x201e9a){var _0x2e0e6b=_0x201e9a['querySelector']('i');if(_0x2ed930){_0x2e0e6b['classList'][_0x3ca643(0x1df)](_0x3ca643(0x17b),_0x3ca643(0x15a)),_0x2e0e6b[_0x3ca643(0x103)]['remove']('far',_0x3ca643(0x11b));if(_0x3f9659)_0x3f9659['innerText']=_0x3ca643(0x17f);}else{_0x2e0e6b[_0x3ca643(0x103)][_0x3ca643(0x200)](_0x3ca643(0x17b),_0x3ca643(0x15a)),_0x2e0e6b[_0x3ca643(0x103)]['add'](_0x3ca643(0x198),_0x3ca643(0x15a));if(_0x3f9659)_0x3f9659[_0x3ca643(0x11d)]=_0x3ca643(0x1ff);}}}window[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x161),function(){var _0x3b82b3=_0x4e6cd4;document[_0x3b82b3(0x1a4)](_0x3b82b3(0x1f2))[_0x3b82b3(0x125)](function(_0x47f36f){var _0x56a43d=_0x3b82b3,_0x51aa56=_0x47f36f['getAttribute'](_0x56a43d(0x163))[_0x56a43d(0x204)](/'([^']+)'/)[0x1];updateCircleUI(_0x51aa56);});}),document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),()=>{var _0x315683=_0x4e6cd4;const _0x119a3a=document[_0x315683(0x1a4)](_0x315683(0x19b));_0x119a3a[_0x315683(0x125)](_0x45ae11=>{var _0x2bd382=_0x315683;const _0x26c550=_0x45ae11['getAttribute'](_0x2bd382(0x202))||_0x45ae11['getAttribute']('title');if(_0x26c550){const _0x2a7e27=document[_0x2bd382(0x152)](_0x2bd382(0x1c6));_0x2a7e27[_0x2bd382(0x127)]=_0x2bd382(0x1cd),_0x2a7e27[_0x2bd382(0x11d)]=_0x26c550,_0x45ae11['appendChild'](_0x2a7e27);}});});function toggleCircles(_0x34c817){var _0x2c85f0=_0x4e6cd4;const _0x79cdc3=_0x34c817[_0x2c85f0(0x14f)](_0x2c85f0(0x1b6));_0x79cdc3[_0x2c85f0(0x103)][_0x2c85f0(0x16c)]('open');const _0x1d5852=_0x34c817['closest'](_0x2c85f0(0x153))[_0x2c85f0(0x185)](_0x2c85f0(0x1f7))||_0x34c817[_0x2c85f0(0x14f)]('.circle-inner-main')[_0x2c85f0(0x185)](_0x2c85f0(0x1f7));if(_0x79cdc3[_0x2c85f0(0x103)][_0x2c85f0(0x171)](_0x2c85f0(0x12d))){_0x34c817[_0x2c85f0(0x184)]('data-title',_0x2c85f0(0x1c1)),_0x34c817['querySelector']('i')[_0x2c85f0(0x103)][_0x2c85f0(0x1bd)](_0x2c85f0(0x1e2),_0x2c85f0(0x1c4));if(_0x1d5852)_0x1d5852['innerText']=_0x2c85f0(0x1c1);}else{_0x34c817[_0x2c85f0(0x184)](_0x2c85f0(0x202),_0x2c85f0(0x1fd)),_0x34c817[_0x2c85f0(0x185)]('i')[_0x2c85f0(0x103)][_0x2c85f0(0x1bd)](_0x2c85f0(0x1c4),_0x2c85f0(0x1e2));if(_0x1d5852)_0x1d5852['innerText']=_0x2c85f0(0x1fd);}}document['addEventListener'](_0x4e6cd4(0x166),()=>{var _0x157f39=_0x4e6cd4;let _0x532c82={};fetch('../dist/jsons/tafsir.json')['then'](_0x29af4b=>_0x29af4b[_0x157f39(0x107)]())[_0x157f39(0x13d)](_0xe22ba5=>{_0x532c82=_0xe22ba5;})[_0x157f39(0x1cc)](_0x48381e=>console[_0x157f39(0x20d)](_0x157f39(0x15d),_0x48381e)),document['querySelectorAll'](_0x157f39(0x20c))[_0x157f39(0x125)](_0x57d679=>{var _0x465d14=_0x157f39;_0x57d679[_0x465d14(0x1f0)](_0x465d14(0x137),()=>{var _0x29b0e7=_0x465d14;const _0x5ee289=_0x57d679[_0x29b0e7(0x1ab)](_0x29b0e7(0x13e)),_0x418914=_0x57d679[_0x29b0e7(0x1ab)]('data-modal');_0x2e312e(_0x5ee289,_0x418914);});});function _0x2e312e(_0x2801f0,_0x2e983d){var _0xa00347=_0x157f39;const _0x2c7d4e=_0x532c82[_0x2801f0];if(!_0x2c7d4e){alert(_0xa00347(0x18f));return;}const _0x177355=document[_0xa00347(0x14b)](_0xa00347(0x201)+_0x2801f0[_0xa00347(0x1bd)](':','-'));_0x177355[_0xa00347(0x1c9)]='';const _0x54088b=_0x2c7d4e['tafsir_text']['split']('\x0a\x0a')[_0xa00347(0x117)](_0xc72d78=>{var _0x343f44=_0xa00347;return _0xc72d78[_0x343f44(0x10c)]('\x0a')?_0xc72d78[_0x343f44(0x1c3)]('\x0a')['map'](_0x1cfb80=>_0x343f44(0x1a8)+_0x1cfb80+_0x343f44(0x17a))[_0x343f44(0x1b9)](''):_0x343f44(0x146)+_0xc72d78+_0x343f44(0x121);})[_0xa00347(0x1b9)]('');_0x177355[_0xa00347(0x1c9)]+=_0x54088b;const _0x4be84f=document['getElementById'](_0x2e983d);_0x4be84f[_0xa00347(0x19a)][_0xa00347(0x195)]='block',_0x4be84f[_0xa00347(0x185)](_0xa00347(0x139))[_0xa00347(0x163)]=function(){var _0x2217af=_0xa00347;_0x4be84f['style'][_0x2217af(0x195)]=_0x2217af(0x1ea);},window[_0xa00347(0x163)]=function(_0x80320d){var _0x13061e=_0xa00347;_0x80320d[_0x13061e(0x1dd)]==_0x4be84f&&(_0x4be84f[_0x13061e(0x19a)][_0x13061e(0x195)]=_0x13061e(0x1ea));};}}),document['addEventListener'](_0x4e6cd4(0x166),function(){loadPage();});function loadPage(){var _0x314c87=_0x4e6cd4;fetch('../dist/html/page.html')[_0x314c87(0x13d)](_0x1125f4=>_0x1125f4[_0x314c87(0x115)]())[_0x314c87(0x13d)](_0x872c3=>{var _0x11062b=_0x314c87;document[_0x11062b(0x14b)](_0x11062b(0x169))['innerHTML']=_0x872c3,setActivePage(),initializePage();});}document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){loadNavigation();});function loadNavigation(){var _0x411a60=_0x4e6cd4;fetch('../dist/html/nav.html')['then'](_0x1dee79=>_0x1dee79[_0x411a60(0x115)]())[_0x411a60(0x13d)](_0x12171b=>{var _0x18d28d=_0x411a60;document[_0x18d28d(0x14b)]('nav-container')[_0x18d28d(0x1c9)]=_0x12171b,setActivePage(),initializePage();});}function setActivePage(){var _0x3952d0=_0x4e6cd4;const _0x23a76d=window[_0x3952d0(0x12a)]['pathname'],_0x33c437=_0x23a76d['split']('/')['pop']()[_0x3952d0(0x1bd)](_0x3952d0(0x1e5),''),_0x27d5d7=document['querySelector'](_0x3952d0(0x147)+_0x33c437+'\x22]');_0x27d5d7&&(_0x27d5d7['id']='active',_0x27d5d7[_0x3952d0(0x103)][_0x3952d0(0x1df)]('w3-blue'));}function initializePage(){var _0x18d1a9=_0x4e6cd4;const _0x2c9546=document[_0x18d1a9(0x14b)](_0x18d1a9(0x1bf));_0x2c9546&&_0x2c9546[_0x18d1a9(0x181)]({'behavior':_0x18d1a9(0x105),'block':'start'}),document[_0x18d1a9(0x14b)](_0x18d1a9(0x19e))[_0x18d1a9(0x1f0)](_0x18d1a9(0x137),function(_0x3281e1){var _0xa927b8=_0x18d1a9;_0x3281e1['preventDefault'](),window[_0xa927b8(0x1eb)]({'top':0x0,'behavior':'smooth'});}),document[_0x18d1a9(0x1a4)]('.w3-opennav')[_0x18d1a9(0x125)](function(_0x5d5991){var _0x27d4bd=_0x18d1a9;_0x5d5991[_0x27d4bd(0x1f0)](_0x27d4bd(0x137),function(_0x3e07d7){var _0x2b9f3e=_0x27d4bd;_0x3e07d7['preventDefault']();const _0x2505c6=document[_0x2b9f3e(0x185)]('#active');_0x2505c6&&_0x2505c6[_0x2b9f3e(0x181)]({'behavior':_0x2b9f3e(0x105),'block':_0x2b9f3e(0x1e1)}),typeof w3_open===_0x2b9f3e(0x1f5)&&w3_open();});});}function w3_close(){var _0x1963fb=_0x4e6cd4;document[_0x1963fb(0x185)](_0x1963fb(0x135))[_0x1963fb(0x19a)]['display']=_0x1963fb(0x1ea),document['querySelector'](_0x1963fb(0x1c0))['style'][_0x1963fb(0x195)]=_0x1963fb(0x1ea);}function w3_open(){var _0x5ce168=_0x4e6cd4;document[_0x5ce168(0x185)](_0x5ce168(0x135))[_0x5ce168(0x19a)][_0x5ce168(0x195)]=_0x5ce168(0x20a),document['querySelector']('.w3-overlay')['style']['display']=_0x5ce168(0x20a);}document[_0x4e6cd4(0x1f0)]('DOMContentLoaded',function(){loadToggle();});function loadToggle(){var _0x5cf2ef=_0x4e6cd4;fetch(_0x5cf2ef(0x191))[_0x5cf2ef(0x13d)](_0x4d0e71=>_0x4d0e71[_0x5cf2ef(0x115)]())[_0x5cf2ef(0x13d)](_0x40a6aa=>{var _0x48bdc3=_0x5cf2ef;document[_0x48bdc3(0x14b)](_0x48bdc3(0x1a7))[_0x48bdc3(0x1c9)]=_0x40a6aa,initializeToggle(),applyTajweedPreference(),loadTranslationPreference();});}function toggleDropdown(){var _0x35dba4=_0x4e6cd4,_0x31fd2d=document['getElementById'](_0x35dba4(0x206));_0x31fd2d['classList'][_0x35dba4(0x16c)](_0x35dba4(0x193));var _0x262a5b=document['querySelector'](_0x35dba4(0x1c0));_0x31fd2d[_0x35dba4(0x103)][_0x35dba4(0x171)](_0x35dba4(0x193))?(_0x262a5b[_0x35dba4(0x19a)][_0x35dba4(0x195)]=_0x35dba4(0x20a),document[_0x35dba4(0x1f0)](_0x35dba4(0x137),closeDropdownOnClickOutside)):(_0x262a5b[_0x35dba4(0x19a)][_0x35dba4(0x195)]=_0x35dba4(0x1ea),document[_0x35dba4(0x1d7)](_0x35dba4(0x137),closeDropdownOnClickOutside));}function closeDropdownOnClickOutside(_0x4b45db){var _0x25a9a8=_0x4e6cd4,_0x1160d1=document['getElementById'](_0x25a9a8(0x206)),_0x2410a9=document[_0x25a9a8(0x185)]('.w3-btn');!_0x1160d1[_0x25a9a8(0x171)](_0x4b45db[_0x25a9a8(0x1dd)])&&!_0x2410a9[_0x25a9a8(0x171)](_0x4b45db['target'])&&(_0x1160d1[_0x25a9a8(0x103)][_0x25a9a8(0x200)]('w3-show'),document[_0x25a9a8(0x185)](_0x25a9a8(0x1c0))['style']['display']='none',document['removeEventListener'](_0x25a9a8(0x137),closeDropdownOnClickOutside));}function selectTranslation(_0x5debc7){var _0x14f95c=_0x4e6cd4;const _0x4c4e8f=document['querySelectorAll'](_0x14f95c(0x1e0));_0x4c4e8f[_0x14f95c(0x125)](function(_0x2771ca){var _0x37140f=_0x14f95c;_0x2771ca[_0x37140f(0x19a)][_0x37140f(0x195)]=_0x2771ca[_0x37140f(0x103)][_0x37140f(0x171)](_0x5debc7)?_0x37140f(0x20a):_0x37140f(0x1ea);}),localStorage[_0x14f95c(0x1f6)]('translationPreference',_0x5debc7);}function loadTranslationPreference(){var _0x1840a2=_0x4e6cd4;const _0x2d9329=localStorage[_0x1840a2(0x186)](_0x1840a2(0x1b8));_0x2d9329&&(document[_0x1840a2(0x185)]('input[name=\x22translation\x22][value=\x22'+_0x2d9329+'\x22]')[_0x1840a2(0x1d4)]=!![],selectTranslation(_0x2d9329));}function initializeToggle(){var _0x5cfcec=_0x4e6cd4;document[_0x5cfcec(0x1a4)]('input[name=\x22translation\x22]')[_0x5cfcec(0x125)](function(_0x5bb25e){var _0x3d6138=_0x5cfcec;_0x5bb25e[_0x3d6138(0x1f0)](_0x3d6138(0x116),function(){var _0x459ddd=_0x3d6138;selectTranslation(this[_0x459ddd(0x158)]);});});}window[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x161),function(){loadTranslationPreference(),initializeToggle();});function toggleTajweed(){var _0x484065=_0x4e6cd4,_0x15c103=document[_0x484065(0x14b)](_0x484065(0x1a6)),_0x50483b=document[_0x484065(0x1a4)](_0x484065(0x120)),_0x205a86=document[_0x484065(0x1a4)]('.h2-with-tajweed');_0x15c103[_0x484065(0x1d4)]?(_0x50483b[_0x484065(0x125)](function(_0x4441b7){var _0x2c2055=_0x484065;_0x4441b7[_0x2c2055(0x19a)][_0x2c2055(0x195)]=_0x2c2055(0x1ea);}),_0x205a86[_0x484065(0x125)](function(_0x435a9d){var _0x41e689=_0x484065;_0x435a9d[_0x41e689(0x19a)][_0x41e689(0x195)]=_0x41e689(0x20a);}),localStorage[_0x484065(0x1f6)](_0x484065(0x173),_0x484065(0x1e7))):(_0x50483b[_0x484065(0x125)](function(_0xa13da){var _0x3315f6=_0x484065;_0xa13da[_0x3315f6(0x19a)][_0x3315f6(0x195)]=_0x3315f6(0x20a);}),_0x205a86['forEach'](function(_0x1ffa93){var _0x36ee67=_0x484065;_0x1ffa93[_0x36ee67(0x19a)][_0x36ee67(0x195)]=_0x36ee67(0x1ea);}),localStorage[_0x484065(0x1f6)](_0x484065(0x173),'disabled'));}function applyTajweedPreference(){var _0x41a5a2=_0x4e6cd4,_0x130e41=localStorage[_0x41a5a2(0x186)]('tajweedPreference'),_0x59f829=document['getElementById'](_0x41a5a2(0x1a6));_0x130e41==='enabled'&&(_0x59f829[_0x41a5a2(0x1d4)]=!![],toggleTajweed());}window['addEventListener'](_0x4e6cd4(0x161),function(){applyTajweedPreference();}),document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){var _0x5b2299=_0x4e6cd4,_0x518dc4='sa',_0x2529cc={'Saad\x20Al-Ghamdi':'sa','Abdul\x20Rahman\x20Al-Sudais':'ar','Abu\x20Bakr\x20Al-Shatri':'ab','Maher\x20Al-Muaiqly':'ma','Saud\x20Al-Shuraim':'ss','Ahmad\x20Al-Ajmi':'aa','Fares\x20Abbad':'fa'};!localStorage[_0x5b2299(0x186)](_0x5b2299(0x215))&&localStorage['setItem'](_0x5b2299(0x215),_0x518dc4);function _0x2aa5d7(_0x441d0f){return Object['keys'](_0x2529cc)['find'](_0x57e1c4=>_0x2529cc[_0x57e1c4]===_0x441d0f);}function _0x26ce49(_0x5df48d){var _0x29b9d8=_0x5b2299,_0x2b7483=localStorage[_0x29b9d8(0x186)](_0x29b9d8(0x215));for(var _0x401c88 in _0x2529cc){var _0x4b129f=_0x2529cc[_0x401c88],_0x4a0fce=document[_0x29b9d8(0x14b)](_0x29b9d8(0x19c)+_0x4b129f+'-'+_0x5df48d);_0x4a0fce&&_0x4a0fce[_0x29b9d8(0x103)][_0x29b9d8(0x1df)](_0x29b9d8(0x118));}var _0x4e0e4d=document['getElementById'](_0x29b9d8(0x19c)+_0x2b7483+'-'+_0x5df48d);_0x4e0e4d&&_0x4e0e4d[_0x29b9d8(0x103)][_0x29b9d8(0x200)]('hidden');}function _0x475561(_0x2d1d5a){var _0x344faf=_0x5b2299,_0xaebf4d=document[_0x344faf(0x14b)](_0x2d1d5a);_0xaebf4d['paused']?_0xaebf4d[_0x344faf(0x1b4)]():_0xaebf4d[_0x344faf(0x129)]();}var _0x12007d=localStorage[_0x5b2299(0x186)](_0x5b2299(0x215)),_0x314348=document['querySelectorAll']('audio');_0x314348[_0x5b2299(0x125)](function(_0x1b42b9){var _0x106cb1=_0x5b2299,_0x127d39=_0x1b42b9['id'][_0x106cb1(0x1c3)]('_')[0x0][_0x106cb1(0x1bd)](_0x106cb1(0x188),'');_0x26ce49(_0x127d39);}),document[_0x5b2299(0x14b)](_0x5b2299(0x194))[_0x5b2299(0x1f0)]('click',function(){var _0x3060f5=_0x5b2299,_0x51eba4=_0x2aa5d7(localStorage['getItem'](_0x3060f5(0x215))),_0x7eb6e3='';for(var _0x1603db in _0x2529cc){var _0x368f=_0x1603db===_0x51eba4?_0x3060f5(0x12b):'';_0x7eb6e3+=_0x3060f5(0x183)+_0x1603db+'\x22\x20'+_0x368f+'>'+_0x1603db+_0x3060f5(0x1f1);}Swal[_0x3060f5(0x17c)]({'html':_0x3060f5(0x17d)+_0x7eb6e3+_0x3060f5(0x145),'showCancelButton':!![],'confirmButtonText':'Select','preConfirm':()=>{var _0x258461=_0x3060f5,_0xb890f2=document['getElementById'](_0x258461(0x157)),_0x263882=_0xb890f2[_0x258461(0x158)],_0x6651fa=_0x2529cc[_0x263882];return localStorage['setItem'](_0x258461(0x215),_0x6651fa),_0x6651fa;}})[_0x3060f5(0x13d)](_0x3a9da0=>{var _0x37b785=_0x3060f5;if(_0x3a9da0[_0x37b785(0x1dc)]){var _0x37b8e9=_0x3a9da0[_0x37b785(0x158)];_0x314348['forEach'](function(_0x4b717c){var _0x3eaff9=_0x37b785,_0x62257a=_0x4b717c['id'][_0x3eaff9(0x1c3)]('_')[0x0][_0x3eaff9(0x1bd)]('audio','');_0x26ce49(_0x62257a);}),Swal[_0x37b785(0x17c)]({'html':_0x37b785(0x217)+_0x2aa5d7(_0x37b8e9)+'</h3>'});}});});}),document[_0x4e6cd4(0x14b)](_0x4e6cd4(0x14a))[_0x4e6cd4(0x1f0)]('click',function(){var _0x5e1844=_0x4e6cd4;document[_0x5e1844(0x14b)](_0x5e1844(0x187))[_0x5e1844(0x103)]['toggle'](_0x5e1844(0x1cf));}),document['getElementById'](_0x4e6cd4(0x14a))['addEventListener'](_0x4e6cd4(0x137),function(_0x4c3913){var _0x143717=_0x4e6cd4;_0x4c3913[_0x143717(0x20f)](),document['getElementById'](_0x143717(0x187))[_0x143717(0x103)]['toggle'](_0x143717(0x1cf));}),document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x137),function(_0x1d0fd7){var _0x50219f=_0x4e6cd4;const _0x32d48e=document[_0x50219f(0x14b)]('menuContainer');!_0x32d48e[_0x50219f(0x171)](_0x1d0fd7['target'])&&!_0x1d0fd7[_0x50219f(0x1dd)][_0x50219f(0x1c5)]('#menuIcon')&&_0x32d48e[_0x50219f(0x103)][_0x50219f(0x200)](_0x50219f(0x1cf));}),document[_0x4e6cd4(0x1f0)]('DOMContentLoaded',function(){var _0x140f0c=_0x4e6cd4;const _0x22b902=document[_0x140f0c(0x1a4)](_0x140f0c(0x179)),_0x4f3772=document[_0x140f0c(0x1a4)](_0x140f0c(0x17e)),_0x241ddd=document[_0x140f0c(0x1a4)](_0x140f0c(0x139));_0x22b902[_0x140f0c(0x125)](_0x69f757=>{var _0x5ec619=_0x140f0c;_0x69f757[_0x5ec619(0x1f0)](_0x5ec619(0x137),function(){var _0x4fc055=_0x5ec619;const _0x528f45=this[_0x4fc055(0x1ab)](_0x4fc055(0x13e))[_0x4fc055(0x1bd)](':','-'),_0x18686d=document[_0x4fc055(0x14b)](_0x4fc055(0x11f)+_0x528f45);_0x18686d&&(_0x18686d['classList'][_0x4fc055(0x1df)](_0x4fc055(0x1cf)),document[_0x4fc055(0x160)][_0x4fc055(0x103)][_0x4fc055(0x1df)](_0x4fc055(0x148)));});}),_0x241ddd[_0x140f0c(0x125)](_0x394e99=>{var _0x40dde5=_0x140f0c;_0x394e99[_0x40dde5(0x1f0)]('click',function(){var _0x17f058=_0x40dde5;const _0x4975ba=this[_0x17f058(0x14f)](_0x17f058(0x214));_0x4975ba&&(_0x4975ba[_0x17f058(0x103)][_0x17f058(0x200)](_0x17f058(0x1cf)),document[_0x17f058(0x160)][_0x17f058(0x103)][_0x17f058(0x200)](_0x17f058(0x148)));});}),window['addEventListener']('click',function(_0x58f7c6){var _0x5e8190=_0x140f0c;_0x4f3772[_0x5e8190(0x125)](_0x3f3b5b=>{var _0x5b7759=_0x5e8190;_0x58f7c6[_0x5b7759(0x1dd)]===_0x3f3b5b&&(_0x3f3b5b[_0x5b7759(0x103)][_0x5b7759(0x200)]('show'),document['body'][_0x5b7759(0x103)]['remove'](_0x5b7759(0x148)));});});}),document[_0x4e6cd4(0x1f0)](_0x4e6cd4(0x166),function(){var _0x4ac6e9=_0x4e6cd4,_0xef2a73=document['querySelectorAll'](_0x4ac6e9(0x12e));function _0x1681b1(_0xef8e23,_0x561782){var _0x1fb78b=_0x4ac6e9;_0xef8e23['style'][_0x1fb78b(0x18a)]=_0x561782+'%';}_0xef2a73[_0x4ac6e9(0x125)](function(_0x12f0d6){_0x1681b1(_0x12f0d6,0x32);}),window[_0x4ac6e9(0x1f0)](_0x4ac6e9(0x174),function(){var _0x38c452=_0x4ac6e9,_0xa5a8f=window[_0x38c452(0x156)],_0x398179=document[_0x38c452(0x160)][_0x38c452(0x124)]-window[_0x38c452(0x143)],_0x4c399d=_0xa5a8f/_0x398179*0x64;_0xef2a73['forEach'](function(_0x32f509){_0x1681b1(_0x32f509,_0x4c399d);});});});
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleSwitch = document.getElementById('lights-toggle');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        toggleSwitch.checked = currentTheme === 'dark';
+    } else {
+        const prefersDarkScheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const defaultTheme = prefersDarkScheme ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', defaultTheme);
+        localStorage.setItem('theme', defaultTheme);
+        toggleSwitch.checked = prefersDarkScheme;
+    }
+    function switchTheme(e) {
+        const newTheme = e.target.checked ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    }
+    toggleSwitch.addEventListener('change', switchTheme);
+    fetch('../dist/xml/quran.xml')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, 'application/xml');
+            const quranNodes = xml.getElementsByTagName('quran');
+            Array.from(quranNodes).forEach(quran => {
+                const id = quran.getAttribute('id');
+                const arabicContent = quran.getElementsByTagName('arabic')[0].textContent;
+                const tajweedContent = quran.getElementsByTagName('tajweed')[0].textContent;
+                const arabicDivs = document.querySelectorAll(`.arabic-content[data-id="${id}"]`);
+                arabicDivs.forEach(div => {
+                    div.classList.remove('fetch');
+                    div.innerHTML = arabicContent;
+                });
+                const tajweedDivs = document.querySelectorAll(`.tajweed-content[data-id="${id}"]`);
+                tajweedDivs.forEach(div => {
+                    div.classList.remove('fetch');
+                    div.innerHTML = tajweedContent;
+                });
+            });
+        })
+        .catch(error => console.error('Error fetching Quran content:', error));
+    fetch('../dist/xml/footnote.xml')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, 'application/xml');
+            const footnoteCollection = xml.getElementsByTagName('footnote');
+            Array.from(footnoteCollection).forEach(footnote => {
+                const footnoteId = footnote.getAttribute('id');
+                const englishContent = footnote.getElementsByTagName('english')[0].textContent;
+                const hindi1Content = footnote.getElementsByTagName('hindi1')[0].textContent;
+                const spanish1Content = footnote.getElementsByTagName('spanish1')[0].textContent;
+                const french1Content = footnote.getElementsByTagName('french1')[0].textContent;
+                const japanese1Content = footnote.getElementsByTagName('japanese1')[0].textContent;
+                const indonesianContent = footnote.getElementsByTagName('indonesian')[0].textContent;
+                const transliterationContent = footnote.getElementsByTagName('transliteration')[0].textContent;
+                const chineseContent = footnote.getElementsByTagName('chinese')[0].textContent;
+                const hindiContent = footnote.getElementsByTagName('hindi')[0].textContent;
+                const spanishContent = footnote.getElementsByTagName('spanish')[0].textContent;
+                const frenchContent = footnote.getElementsByTagName('french')[0].textContent;
+                const bengaliContent = footnote.getElementsByTagName('bengali')[0].textContent;
+                const portugueseContent = footnote.getElementsByTagName('portuguese')[0].textContent;
+                const russianContent = footnote.getElementsByTagName('russian')[0].textContent;
+                const germanContent = footnote.getElementsByTagName('german')[0].textContent;
+                const japaneseContent = footnote.getElementsByTagName('japanese')[0].textContent;
+                const koreanContent = footnote.getElementsByTagName('korean')[0].textContent;
+                updateFootnoteContent(footnoteId, englishContent, hindi1Content, spanish1Content, french1Content, japanese1Content, indonesianContent, transliterationContent, chineseContent, hindiContent, spanishContent, frenchContent, bengaliContent, portugueseContent, russianContent, germanContent, japaneseContent, koreanContent);
+            });
+            reinitializeEventHandlers();
+        })
+        .catch(error => console.error('Error fetching Footnote XML:', error));
+    function updateFootnoteContent(footnoteId, englishContent, hindi1Content, spanish1Content, french1Content, japanese1Content, indonesianContent, transliterationContent, chineseContent, hindiContent, spanishContent, frenchContent, bengaliContent, portugueseContent, russianContent, germanContent, japaneseContent, koreanContent) {
+        const englishDivs = document.querySelectorAll(`[id="en-${footnoteId}"]`);
+        englishDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = englishContent;
+        });
+        const hindi1Divs = document.querySelectorAll(`[id="hi-${footnoteId}"]`);
+        hindi1Divs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = hindi1Content;
+        });
+        const spanish1Divs = document.querySelectorAll(`[id="es-${footnoteId}"]`);
+        spanish1Divs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = spanish1Content;
+        });
+        const french1Divs = document.querySelectorAll(`[id="fr-${footnoteId}"]`);
+        french1Divs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = french1Content;
+        });
+        const japanese1Divs = document.querySelectorAll(`[id="ja-${footnoteId}"]`);
+        japanese1Divs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = japanese1Content;
+        });
+        const indonesianDivs = document.querySelectorAll(`[id="id-${footnoteId}"]`);
+        indonesianDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = indonesianContent;
+        });
+        const transliterationDivs = document.querySelectorAll(`[id="t01-${footnoteId}"]`);
+        transliterationDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = transliterationContent;
+        });
+        const chineseDivs = document.querySelectorAll(`[id="t02-${footnoteId}"]`);
+        chineseDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = chineseContent;
+        });
+        const hindiDivs = document.querySelectorAll(`[id="t03-${footnoteId}"]`);
+        hindiDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = hindiContent;
+        });
+        const spanishDivs = document.querySelectorAll(`[id="t04-${footnoteId}"]`);
+        spanishDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = spanishContent;
+        });
+        const frenchDivs = document.querySelectorAll(`[id="t05-${footnoteId}"]`);
+        frenchDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = frenchContent;
+        });
+        const bengaliDivs = document.querySelectorAll(`[id="t06-${footnoteId}"]`);
+        bengaliDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = bengaliContent;
+        });
+        const portugueseDivs = document.querySelectorAll(`[id="t07-${footnoteId}"]`);
+        portugueseDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = portugueseContent;
+        });
+        const russianDivs = document.querySelectorAll(`[id="t08-${footnoteId}"]`);
+        russianDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = russianContent;
+        });
+        const germanDivs = document.querySelectorAll(`[id="t09-${footnoteId}"]`);
+        germanDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = germanContent;
+        });
+        const japaneseDivs = document.querySelectorAll(`[id="t10-${footnoteId}"]`);
+        japaneseDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = japaneseContent;
+        });
+        const koreanDivs = document.querySelectorAll(`[id="t11-${footnoteId}"]`);
+        koreanDivs.forEach(div => {
+            div.classList.remove('fetch');
+            div.innerHTML = koreanContent;
+        });
+    }
+    function reinitializeEventHandlers() {
+        const modalButtons = document.querySelectorAll('.myBtn_multi');
+        modalButtons.forEach((button, index) => {
+            button.setAttribute('data-index', index);
+            button.onclick = function() {
+                const modalparent = document.getElementsByClassName("modal_multi");
+                modalparent[index].style.display = "block";
+            };
+        });
+        const closeButtons = document.querySelectorAll('.close_multi');
+        closeButtons.forEach((button, index) => {
+            button.setAttribute('data-index', index);
+            button.onclick = function() {
+                const modalparent = document.getElementsByClassName("modal_multi");
+                modalparent[index].style.display = "none";
+            };
+        });
+        window.onclick = function(event) {
+            const modalparent = document.getElementsByClassName("modal_multi");
+            Array.from(modalparent).forEach((modal, index) => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        };
+    }
+    let tafsirData = {};
+    fetch('../dist/json/tafsir.json')
+        .then(response => response.json())
+        .then(data => {
+            tafsirData = data;
+        })
+        .catch(error => console.error('Error loading tafsir:', error));
+    document.querySelectorAll('.circle-inner.myBtn_multi').forEach(button => {
+        button.addEventListener('click', () => {
+            const verse = button.getAttribute('data-verse');
+            const modalId = button.getAttribute('data-modal');
+            showTafsir(verse, modalId);
+        });
+    });
+    function showTafsir(verse, modalId) {
+        const tafsir = tafsirData[verse];
+        if (!tafsir) {
+            alert('No tafsir found for this verse.');
+            return;
+        }
+        const tafsirContent = document.getElementById(`tafsir-content-${verse.replace(':', '-')}`);
+        tafsirContent.innerHTML = '';
+        const processedTafsirText = tafsir.tafsir_text
+            .split('\n\n')
+            .map(section => {
+                if (section.includes('\n')) {
+                    return section.split('\n')
+                        .map(para => `<p>${para}</p>`)
+                        .join('');
+                } else {
+                    return `<h3>${section}</h3>`;
+                }
+            })
+            .join('');
+        tafsirContent.innerHTML += processedTafsirText;
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+        modal.querySelector('.close_multi').onclick = function() {
+            modal.style.display = 'none';
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+    }
+    fetch('../dist/xml/surah-info.xml')
+        .then(response => response.text())
+        .then(data => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(data, "application/xml");
+            document.querySelectorAll("[id^='surah-info-']").forEach(element => {
+                let id = element.id.split('-')[2]; 
+                let surahInfo = xml.querySelector(`surah[id="${id}"]`);
+                if (surahInfo) {
+                    let title = surahInfo.querySelector('title').textContent;
+                    let location = surahInfo.querySelector('location').textContent;
+                    let sections = surahInfo.querySelectorAll('section');
+                    let content = `<h3 class="text-center" style="font-size: 30px;font-weight: bold;">${title}</h3>`;
+                    content += `<center><b>${location}</b></center><br />`;
+                    content += `<div class="site-div has-top-divider"></div>`;
+                    sections.forEach(section => {
+                        let heading = section.querySelector('heading').textContent;
+                        let description = section.querySelector('description').textContent;
+                        let names = section.querySelectorAll('name');
+                        content += `<h3>${heading}</h3>`;
+                        content += `<p>${description}</p>`;
+                        names.forEach(name => {
+                            content += `<p>- ${name.textContent}</p>`;
+                        });
+                    });
+                    element.innerHTML = content;
+                }
+            });
+        })
+        .catch(error => console.log('Error fetching XML:', error));
+    loadPage();
+    loadNavigation();
+    loadToggle();
+    var fontSizeH1 = localStorage.getItem('fontSizeh1');
+    var fontSizeH2 = localStorage.getItem('fontSizeh2');
+    if (fontSizeH1) {
+        changeFontSize('h1-without-tajweed', fontSizeH1);
+    } else {
+        changeFontSize('h1-without-tajweed', defaultFontSizeH1);
+    }
+    if (fontSizeH2) {
+        changeFontSize('h2-with-tajweed', fontSizeH2);
+    } else {
+        changeFontSize('h2-with-tajweed', defaultFontSizeH2);
+    }
+    var progressBars = document.querySelectorAll('.progress-bar .progress');
+    function updateProgressBar(progressBar, progress) {
+        progressBar.style.width = progress + '%';
+    }
+    progressBars.forEach(function(progressBar) {
+        updateProgressBar(progressBar, 0);
+    });
+    window.addEventListener('scroll', function () {
+        var scrollTop = window.scrollY;
+        var docHeight = document.body.scrollHeight - window.innerHeight;
+        var scrollPercent = (scrollTop / docHeight) * 100;
+        progressBars.forEach(function(progressBar) {
+            updateProgressBar(progressBar, scrollPercent);
+        });
+    });
+});
+function loadPage() {
+    fetch('../dist/html/page.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('page-container').innerHTML = data;
+            setActivePage();
+            initializePage();
+        });
+}
+function loadNavigation() {
+    fetch('../dist/html/nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-container').innerHTML = data;
+            setActivePage();
+            initializePage();
+        });
+}
+function setActivePage() {
+    const path = window.location.pathname;
+    const currentPage = path.split('/').pop().replace('.html', '');
+    const activeLink = document.querySelector(`a[data-page="${currentPage}"]`);
+    if (activeLink) {
+        activeLink.id = 'active';
+        activeLink.classList.add('w3-blue');
+    }
+}
+function initializePage() {
+    const activeElement = document.getElementById('active');
+    if (activeElement) {
+        activeElement.scrollIntoView({
+            behavior: 'instant', 
+            block: 'start'
+        });
+    }
+    document.getElementById('backToTop').addEventListener('click', function (event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    document.querySelectorAll('.w3-opennav').forEach(function (menuToggle) {
+        menuToggle.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetElement = document.querySelector('#active');
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'instant',
+                    block: 'start'
+                });
+            }
+            if (typeof w3_open === 'function') {
+                w3_open();
+            }
+        });
+    });
+}
+function w3_close() {
+    document.querySelector('.w3-sidenav').style.display = 'none';
+    document.querySelector('.w3-overlay').style.display = 'none';
+}
+function w3_open() {
+    document.querySelector('.w3-sidenav').style.display = 'block';
+    document.querySelector('.w3-overlay').style.display = 'block';
+}
+function loadToggle() {
+    fetch('../dist/html/toggle.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('toggle-container').innerHTML = data;
+            initializeToggle();
+            applyTajweedPreference();
+            loadTranslationPreference();
+        });
+}
+function toggleDropdown() {
+    var dropdown = document.getElementById("translationDropdown");
+    dropdown.classList.toggle("w3-show");
+    var overlay = document.querySelector('.w3-overlay');
+    if (dropdown.classList.contains("w3-show")) {
+        overlay.style.display = 'block';
+        document.addEventListener('click', closeDropdownOnClickOutside);
+    } else {
+        overlay.style.display = 'none';
+        document.removeEventListener('click', closeDropdownOnClickOutside);
+    }
+}
+function closeDropdownOnClickOutside(event) {
+    var dropdown = document.getElementById("translationDropdown");
+    var button = document.querySelector('.w3-btn');
+    if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+        dropdown.classList.remove("w3-show");
+        document.querySelector('.w3-overlay').style.display = 'none';
+        document.removeEventListener('click', closeDropdownOnClickOutside);
+    }
+}
+function toggleTranslation() {
+    var translationToggle = document.getElementById("translationToggle");
+    var translationType = translationToggle.value;
+    var allTranslations = document.querySelectorAll(".translation");
+    allTranslations.forEach(function (translation) {
+        translation.style.display = "none";
+    });
+    var selectedTranslations = document.querySelectorAll("." + translationType);
+    selectedTranslations.forEach(function (translation) {
+        translation.style.display = "block";
+    });
+    localStorage.setItem("translationPreference", translationType);
+}
+function loadTranslationPreference() {
+    var translationPreference = localStorage.getItem("translationPreference");
+    if (translationPreference) {
+        document.getElementById("translationToggle").value = translationPreference;
+        toggleTranslation();
+    }
+}
+window.addEventListener('load', function () {
+    loadTranslationPreference();
+});
+var audioPlayers = document.querySelectorAll('audio');
+function togglePlayPause(audioId) {
+    var audio = document.getElementById(audioId);
+    var playPauseIcon = audio.nextElementSibling;
+    var tooltip = playPauseIcon.closest('.circle-inner').querySelector('.tooltip');
+    if (audio.paused) {
+        audio.play();
+        playPauseIcon.innerHTML = '<i class="fas fa-pause"></i>';
+        playPauseIcon.setAttribute('data-title', 'Pause');
+        if (tooltip) tooltip.innerText = 'Pause';
+    } else {
+        audio.pause();
+        playPauseIcon.innerHTML = '<i class="fas fa-play"></i>';
+        playPauseIcon.setAttribute('data-title', 'Play');
+        if (tooltip) tooltip.innerText = 'Play';
+    }
+    audio.addEventListener('ended', function() {
+        playPauseIcon.innerHTML = '<i class="fas fa-play"></i>';
+        playPauseIcon.setAttribute('data-title', 'Play');
+        if (tooltip) tooltip.innerText = 'Play';
+    });
+}
+function setPlayPauseTitle() {
+    var playPauseIcons = document.querySelectorAll('.play-pause-icon');
+    playPauseIcons.forEach(function(icon) {
+        icon.addEventListener('mouseenter', function() {
+            var iconElem = icon.querySelector('i');
+            var tooltip = icon.closest('.circle-inner').querySelector('.tooltip');
+            if (iconElem.classList.contains('fa-play')) {
+                icon.setAttribute('data-title', 'Play');
+                if (tooltip) tooltip.innerText = 'Play';
+            } else {
+                icon.setAttribute('data-title', 'Pause');
+                if (tooltip) tooltip.innerText = 'Pause';
+            }
+        });
+    });
+}
+audioPlayers.forEach(function(player) {
+    var playPauseButton = player.nextElementSibling;
+    playPauseButton.classList.add('play-pause-icon');
+    playPauseButton.innerHTML = '<i class="fas fa-play"></i>';
+});
+setPlayPauseTitle();
+var maxZoomIn = 5;
+var maxZoomOut = 5;
+var defaultFontSizeH1 = 38;
+var defaultFontSizeH2 = 45;
+function getFontSize(element) {
+    return parseInt(window.getComputedStyle(element).fontSize);
+}
+function zoomIn() {
+    var h1Elements = document.getElementsByClassName("h1-without-tajweed");
+    var h2Elements = document.getElementsByClassName("h2-with-tajweed");
+    for (var i = 0; i < h1Elements.length; i++) {
+        var currentSize = getFontSize(h1Elements[i]);
+        if (currentSize < defaultFontSizeH1 + 2 * maxZoomIn) {
+            h1Elements[i].style.fontSize = (currentSize + 2) + "px";
+            localStorage.setItem('fontSizeh1', currentSize + 2);
+        }
+    }
+    for (var i = 0; i < h2Elements.length; i++) {
+        var currentSize = getFontSize(h2Elements[i]);
+        if (currentSize < defaultFontSizeH2 + 2 * maxZoomIn) {
+            h2Elements[i].style.fontSize = (currentSize + 2) + "px";
+            localStorage.setItem('fontSizeh2', currentSize + 2);
+        }
+    }
+}
+function zoomOut() {
+    var h1Elements = document.getElementsByClassName("h1-without-tajweed");
+    var h2Elements = document.getElementsByClassName("h2-with-tajweed");
+    for (var i = 0; i < h1Elements.length; i++) {
+        var currentSize = getFontSize(h1Elements[i]);
+        if (currentSize > defaultFontSizeH1 - 2 * maxZoomOut) {
+            h1Elements[i].style.fontSize = (currentSize - 2) + "px";
+            localStorage.setItem('fontSizeh1', currentSize - 2);
+        }
+    }
+    for (var i = 0; i < h2Elements.length; i++) {
+        var currentSize = getFontSize(h2Elements[i]);
+        if (currentSize > defaultFontSizeH2 - 2 * maxZoomOut) {
+            h2Elements[i].style.fontSize = (currentSize - 2) + "px";
+            localStorage.setItem('fontSizeh2', currentSize - 2);
+        }
+    }
+}
+function resetSize() {
+    localStorage.setItem('fontSizeh1', defaultFontSizeH1);
+    localStorage.setItem('fontSizeh2', defaultFontSizeH2);
+    changeFontSize('h1-without-tajweed', defaultFontSizeH1);
+    changeFontSize('h2-with-tajweed', defaultFontSizeH2);
+}
+function changeFontSize(className, fontSize) {
+    var elements = document.getElementsByClassName(className);
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.fontSize = fontSize + "px";
+    }
+}
+function toggleView(option) {
+    if (option === 'page') {
+        document.getElementById('pageOption').style.display = 'block';
+        document.getElementById('surahOption').style.display = 'none';
+        document.getElementById('pageButton').classList.add('active');
+        document.getElementById('surahButton').classList.remove('active');
+    } else if (option === 'surah') {
+        document.getElementById('pageOption').style.display = 'none';
+        document.getElementById('surahOption').style.display = 'block';
+        document.getElementById('pageButton').classList.remove('active');
+        document.getElementById('surahButton').classList.add('active');
+    }
+}
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+function toggleBookmark(pageNumber, verseId) {
+    var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || {};
+    if (!bookmarks[pageNumber]) {
+        bookmarks[pageNumber] = [];
+    }
+    var index = bookmarks[pageNumber].indexOf(verseId);
+    if (index === -1) {
+        bookmarks[pageNumber].push(verseId);
+    } else {
+        bookmarks[pageNumber].splice(index, 1);
+    }
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    updateBookmarkButtons();
+}
+function getBookmarks() {
+    return JSON.parse(localStorage.getItem('bookmarks')) || {};
+}
+function updateBookmarkButton(button, verseId) {
+    var bookmarks = getBookmarks();
+    var isBookmarked = bookmarks[getPageNumber()] && bookmarks[getPageNumber()].includes(verseId);
+    var tooltip = button.closest('.circle-inner').querySelector('.tooltip');
+    if (isBookmarked) {
+        button.innerHTML = '<i class="fas fa-bookmark"></i>';
+        button.setAttribute('data-title', 'Bookmarked!');
+        if (tooltip) tooltip.innerText = 'Bookmarked!';
+        button.style.color = 'rgb(255, 255, 255)';
+    } else {
+        button.innerHTML = '<i class="far fa-bookmark"></i>';
+        button.setAttribute('data-title', 'Bookmark');
+        if (tooltip) tooltip.innerText = 'Bookmark';
+        button.style.color = 'rgb(255, 255, 255)';
+    }
+}
+function updateBookmarkButtons() {
+    var bookmarkButtons = document.querySelectorAll('.bookmark-btn');
+    bookmarkButtons.forEach(function(button) {
+        var verseId = button.getAttribute('data-id');
+        updateBookmarkButton(button, verseId);
+    });
+}
+updateBookmarkButtons();
+var bookmarkButtons = document.querySelectorAll('.bookmark-btn');
+ bookmarkButtons.forEach(function(button) {
+    var verseId = button.getAttribute('data-id');
+    button.addEventListener('click', function() {
+        toggleBookmark(getPageNumber(), verseId);
+    });
+});
+function getPageNumber() {
+    var urlParts = window.location.pathname.split('/');
+    return parseInt(urlParts[urlParts.length - 1].split('.')[0]);
+}
+function updateBookmarkButtons() {
+    var bookmarkButtons = document.querySelectorAll('.bookmark-btn');
+    bookmarkButtons.forEach(function(button) {
+        var verseId = button.getAttribute('data-id');
+        updateBookmarkButton(button, verseId);
+    });
+}
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('searchInput').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            searchVerse();
+        }
+    });
+});
+function searchVerse() {
+    var verseId = document.getElementById('searchInput').value.trim();
+    var verseElement = document.getElementById(verseId);
+    if (verseElement) {
+        verseElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        Swal.fire({
+            html: "Verse Not Found",
+            icon: "error",
+            confirmButtonText: "OK"
+        });
+    }
+}
 document.addEventListener("DOMContentLoaded", function() {
     var targetVerseId = localStorage.getItem('targetVerseId');
     if (targetVerseId) {
@@ -9,4 +620,592 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         localStorage.removeItem('targetVerseId');
     }
+});
+(function() {
+    function mainFunction() {
+        let data = fetchData();
+        let processedData = processData(data);
+        displayData(processedData);
+        animateResults(processedData);
+    }
+        function fetchData() {
+        let data = [];
+        for (let i = 0; i < 1000; i++) {
+            data.push({
+                id: i,
+                value: Math.random() * 100
+            });
+        }
+        return data;
+    }
+    function processData(data) {
+        let processedData = [];
+        for (let item of data) {
+            if (item.value > 50) {
+                processedData.push({
+                    id: item.id,
+                    result: "High"
+                });
+            } else {
+                processedData.push({
+                    id: item.id,
+                    result: "Low"
+                });
+            }
+        }
+        return processedData;
+    }
+    function displayData(data) {
+        console.log("Processed Data:");
+        for (let item of data) {
+            console.log(`ID: ${item.id}, Result: ${item.result}`);
+        }
+    }
+    function animateResults(data) {
+        console.log("Animating Results...");
+        for (let item of data) {
+        }
+    }
+    document.addEventListener("DOMContentLoaded", mainFunction);
+})();
+function copyText(button, verseId) {
+    var verseContainer = document.getElementById(verseId);
+    var h1Text = verseContainer.querySelector('h1').textContent;
+    var translationText = '';
+    var translations = verseContainer.querySelectorAll('h4.translation');
+    translations.forEach(function(translation) {
+        if (translation.style.display !== 'none') {
+            var clone = translation.cloneNode(true);
+            var footnotes = clone.querySelectorAll('.myBtn_multi, .modal1, .modal_multi');
+            footnotes.forEach(function(footnote) {
+                footnote.remove();
+            });
+            translationText += clone.textContent.trim() + '\n';
+        }
+    });
+    translationText = translationText.trim();
+    var pageUrl = window.location.origin + window.location.pathname + '#' + encodeURIComponent(verseId);
+    var fullText = `Quran Surah ${verseId}\n\n` + h1Text + '\n\n' + translationText + '\n\n' + pageUrl;
+    navigator.clipboard.writeText(fullText).then(function() {
+        button.setAttribute('data-title', 'Copied!');
+        button.innerHTML = '<i class="fas fa-copy"></i>';
+        var tooltip = button.closest('.circle-inner').querySelector('.tooltip') || button.closest('.circle-inner-main').querySelector('.tooltip');
+        if (tooltip) tooltip.innerText = 'Copied!';
+        setTimeout(function() {
+            button.setAttribute('data-title', 'Copy');
+            button.innerHTML = '<i class="far fa-copy"></i>';
+            if (tooltip) tooltip.innerText = 'Copy';
+        }, 2000);
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+    });
+}
+function openShareModal(verseId) {
+    var verseContainer = document.getElementById(verseId);
+    var h1Text = verseContainer.querySelector('h1').textContent;
+    var translationText = '';
+    var translations = verseContainer.querySelectorAll('h4.translation');
+    translations.forEach(function(translation) {
+        if (translation.style.display !== 'none') {
+            var clone = translation.cloneNode(true);
+            var footnotes = clone.querySelectorAll('.myBtn_multi, .modal1, .modal_multi');
+            footnotes.forEach(function(footnote) {
+                footnote.remove();
+            });
+            translationText += clone.textContent.trim() + '\n';
+        }
+    });
+    translationText = translationText.trim();
+    var pageUrl = window.location.origin + window.location.pathname + '#' + encodeURIComponent(verseId);
+    var fullText = `Quran Surah ${verseId}\n\n` + h1Text + '\n\n' + translationText + '\n\n' + pageUrl;
+    var encodedContent = encodeURIComponent(fullText);
+    var modalContent = `
+        <button onclick="share('facebook', '${encodedContent}')" class="social-btn"><i class="fab fa-facebook"></i></button>
+        <button onclick="share('twitter', '${encodedContent}')" class="social-btn"><i class="fab fa-twitter"></i></button>
+        <button onclick="share('whatsapp', '${encodedContent}')" class="social-btn"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="share('telegram', '${encodedContent}')" class="social-btn"><i class="fab fa-telegram"></i></button>
+    `;
+    Swal.fire({
+        html: '<h3 style="font-size: 30px;">SHARE</h3><h3>Quran Surah ' + verseId + '</h3><br />' + modalContent,
+        showCloseButton: true,
+        showCancelButton: false,
+        focusConfirm: false,
+        customClass: {
+            popup: 'social-modal'
+        }
+    });
+}
+function share(platform, encodedContent) {
+    let url = '';
+    switch (platform) {
+        case 'facebook':
+            url = `https://www.facebook.com/sharer/sharer.php?u=${encodedContent}`;
+            break;
+        case 'twitter':
+            url = `https://twitter.com/intent/tweet?text=${encodedContent}`;
+            break;
+        case 'whatsapp':
+            url = `https://api.whatsapp.com/send?text=${encodedContent}`;
+            break;
+        case 'telegram':
+            url = `https://telegram.me/share/url?text=${encodedContent}`;
+            break;
+        default:
+            return;
+    }
+    window.open(url, '_blank');
+}
+document.addEventListener("DOMContentLoaded", function() {
+    setupCopyButtons();
+});
+function setupCopyButtons() {
+    var copyButtons = document.querySelectorAll('.copy-btn');
+    copyButtons.forEach(function(button) {
+        button.innerHTML = '<i class="far fa-copy"></i>';
+        button.addEventListener('click', function() {
+            var verseId = button.getAttribute('data-verse-id');
+            copyText(button, verseId);
+        });
+    });
+    var shareButtons = document.querySelectorAll('.share-btn');
+    shareButtons.forEach(function(button) {
+        button.innerHTML = '<i class="fas fa-share"></i>';
+        button.addEventListener('click', function() {
+            var verseId = button.getAttribute('data-verse-id');
+            openShareModal(verseId);
+        });
+    });
+}
+(function() {
+    function mainFunction() {
+        let data = fetchData();
+        let processedData = processData(data);
+        displayData(processedData);
+    }
+    function fetchData() {
+        let data = [];
+        for (let i = 0; i < 1000; i++) {
+            data.push({
+                id: i,
+                value: Math.random() * 100
+            });
+        }
+        return data;
+    }
+    function processData(data) {
+        let processedData = [];
+        for (let item of data) {
+            if (item.value > 50) {
+                processedData.push({
+                    id: item.id,
+                    result: "High"
+                });
+            } else {
+                processedData.push({
+                    id: item.id,
+                    result: "Low"
+                });
+            }
+        }
+        return processedData;
+    }
+    function displayData(data) {
+        console.log("Processed Data:");
+        for (let item of data) {
+            console.log(`ID: ${item.id}, Result: ${item.result}`);
+        }
+    }
+    document.addEventListener("DOMContentLoaded", mainFunction);
+})();
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOM Loaded");
+    const originalText = "quran-web3.nft";
+    console.log("Original Text:", originalText);
+    const elements = document.querySelectorAll('.w3-centered[title="quran-web3.nft"]');
+    console.log("Elements:", elements);
+    let textChanged = false;
+    if (elements.length < 18) {
+        textChanged = true;
+    } else {
+        elements.forEach(element => {
+            if (element.innerText !== originalText) {
+                textChanged = true;
+            }
+        });
+    }
+    console.log("TextChanged:", textChanged);
+    if (textChanged) {
+        Swal.fire({
+            html: '<h3>Warning!</h3><p>This is Not the Original, This Copy of the Web3 Quran Text Has Been Altered!</p>',
+            icon: "error",
+            confirmButtonText: "OK"
+        });
+    }
+    const circles = document.querySelectorAll('.circle-inner-main, .circle-inner');
+    circles.forEach(circle => {
+        const title = circle.getAttribute('data-title') || circle.getAttribute('title');
+        if (title) {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'tooltip';
+            tooltip.innerText = title;
+            circle.appendChild(tooltip);
+        }
+    });
+});
+function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
+    let paths = document.querySelectorAll("path");
+    let mode=repeat?'infinite':'forwards'
+    for (let i = 0; i < paths.length; i++) {
+        const path = paths[i];
+        const length = path.getTotalLength();
+        path.style["stroke-dashoffset"] = `${length}px`;
+        path.style["stroke-dasharray"] = `${length}px`;
+        path.style["stroke-width"] = `${strokeWidth}px`;
+        path.style["stroke"] = `${strokeColor}`;
+        path.style["animation"] = `${duration}s svg-text-anim ${mode} ${timingFunction}`;
+        path.style["animation-delay"] = `${i * delay}s`;
+    }
+}
+function openNoteModal(verseId) {
+    var savedNote = localStorage.getItem('note-' + verseId) || '';
+    var modalContent = {
+        html: '<h3>Note for ' + verseId + '</h3>',
+        input: 'textarea',
+        inputPlaceholder: 'Enter your notes here...',
+        inputValue: savedNote,
+        showCancelButton: true,
+        showLoaderOnConfirm: true,
+        customClass: {
+            popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+            title: 'swal2-title'
+        },
+        preConfirm: (noteText) => {
+            if (!noteText.trim()) {
+                Swal.showValidationMessage('Please enter a note before saving.');
+                return false;
+            }
+            saveNoteToStorage(verseId, noteText);
+        }
+    };
+    var hasNote = savedNote.trim() !== '';
+    if (hasNote) {
+        modalContent.confirmButtonText = 'Save Note';
+        modalContent.footer = `
+            <button type="button" class="swal-button swal-button--delete cursor-pointer social-btn"><i class="fas fa-trash"></i></button>
+        `;
+    } else {
+        modalContent.confirmButtonText = 'Save Note';
+        modalContent.showCancelButton = true;
+    }
+    Swal.fire(modalContent).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                icon: 'success',
+                html: '<h3>Note saved successfully!</h3>',
+                showConfirmButton: false,
+                timer: 1500,
+                customClass: {
+                    popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+                    title: 'swal2-title'
+                }
+            }).then(() => {
+                updateCircleUI(verseId);
+            });
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+            Swal.fire({
+                icon: 'info',
+                html: '<h3>Note not saved.</h3>',
+                showConfirmButton: false,
+                timer: 1500,
+                customClass: {
+                    popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+                    title: 'swal2-title'
+                }
+            });
+        }
+    });
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('swal-button--delete') || e.target.closest('.swal-button--delete')) {
+            deleteNoteModal(verseId);
+        }
+    });
+}
+function saveNoteToStorage(verseId, noteText) {
+    if (noteText.trim() === '') {
+        Swal.fire({
+            icon: 'warning',
+            html: '<h3>Oops...</h3>',
+            text: 'Please enter a note before saving.',
+            customClass: {
+                popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+                title: 'swal2-title'
+            }
+        });
+        return;
+    }
+    localStorage.setItem('note-' + verseId, noteText.trim());
+    Swal.fire({
+        icon: 'success',
+        html: '<h3>Note saved successfully!</h3>',
+        showConfirmButton: false,
+        timer: 1500,
+        customClass: {
+            popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+            title: 'swal2-title'
+        }
+    }).then(() => {
+        updateCircleUI(verseId);
+    });
+}
+function deleteNoteModal(verseId) {
+    Swal.fire({
+        icon: 'warning',
+        html: '<h3>Delete Note for ' + verseId + '</h3>',
+        text: 'Are you sure you want to delete this note?',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel',
+        customClass: {
+            popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+            title: 'swal2-title'
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.removeItem('note-' + verseId);
+            Swal.fire({
+                icon: 'success',
+                html: '<h3>Note deleted successfully!</h3>',
+                showConfirmButton: false,
+                timer: 1500,
+                customClass: {
+                    popup: document.body.classList.contains('lights-off') ? 'lights-off' : '',
+                    title: 'swal2-title'
+                }
+            }).then(() => {
+                updateCircleUI(verseId);
+            });
+        }
+    });
+}
+function updateCircleUI(verseId) {
+    var hasNote = localStorage.getItem('note-' + verseId) !== null;
+    var noteButton = document.querySelector(`.note-btn[onclick*="${verseId}"]`);
+    var tooltip = noteButton.closest('.circle-inner').querySelector('.tooltip') || noteButton.closest('.circle-inner-main').querySelector('.tooltip');
+    if (noteButton) {
+        var icon = noteButton.querySelector('i');        
+        if (hasNote) {
+            icon.classList.add('fas', 'fa-clipboard');
+            icon.classList.remove('far', 'fa-sticky-note');
+            if (tooltip) tooltip.innerText = 'Open My Note';
+        } else {
+            icon.classList.remove('fas', 'fa-clipboard');
+            icon.classList.add('far', 'fa-clipboard');
+            if (tooltip) tooltip.innerText = 'Write Note';
+        }
+    }
+}
+window.addEventListener('load', function () {
+    document.querySelectorAll('.note-btn').forEach(function(button) {
+        var verseId = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+        updateCircleUI(verseId);
+    });
+});
+function toggleCircles(element) {
+    const container = element.closest('.circle-container');
+    container.classList.toggle('open');
+
+    const tooltip = element.closest('.circle-inner').querySelector('.tooltip') || element.closest('.circle-inner-main').querySelector('.tooltip');
+
+    if (container.classList.contains('open')) {
+        element.setAttribute('data-title', 'Hide');
+        element.querySelector('i').classList.replace('fa-plus', 'fa-minus');
+        if (tooltip) tooltip.innerText = 'Hide';
+    } else {
+        element.setAttribute('data-title', 'More');
+        element.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+        if (tooltip) tooltip.innerText = 'More';
+    }
+}
+function selectTranslation(translationType) {
+    const allTranslations = document.querySelectorAll("h4.translation");
+    allTranslations.forEach(function (translation) {
+        translation.style.display = translation.classList.contains(translationType) ? 'block' : 'none';
+    });
+    localStorage.setItem("translationPreference", translationType);
+}
+function loadTranslationPreference() {
+    const translationPreference = localStorage.getItem("translationPreference");
+    if (translationPreference) {
+        document.querySelector(`input[name="translation"][value="${translationPreference}"]`).checked = true;
+        selectTranslation(translationPreference);
+    }
+}
+function initializeToggle() {
+    document.querySelectorAll('input[name="translation"]').forEach(function (radio) {
+        radio.addEventListener('change', function() {
+            selectTranslation(this.value);
+        });
+    });
+}
+window.addEventListener('load', function () {
+    loadTranslationPreference();
+    initializeToggle();
+});
+function toggleTajweed() {
+var tajweedToggle = document.getElementById("tajweedToggle");
+var h1WithoutTajweed = document.querySelectorAll(".h1-without-tajweed");
+var h2WithTajweed = document.querySelectorAll(".h2-with-tajweed");
+if (tajweedToggle.checked) {
+    h1WithoutTajweed.forEach(function(h1) {
+        h1.style.display = "none";
+    });
+    h2WithTajweed.forEach(function(h2) {
+        h2.style.display = "block";
+    });
+    localStorage.setItem("tajweedPreference", "enabled");
+} else {
+    h1WithoutTajweed.forEach(function(h1) {
+        h1.style.display = "block";
+    });
+    h2WithTajweed.forEach(function(h2) {
+        h2.style.display = "none";
+    });
+    localStorage.setItem("tajweedPreference", "disabled");
+}
+}
+function applyTajweedPreference() {
+var tajweedPreference = localStorage.getItem("tajweedPreference");
+var tajweedToggle = document.getElementById("tajweedToggle");
+if (tajweedPreference === "enabled") {
+    tajweedToggle.checked = true;
+    toggleTajweed();
+}
+}
+window.addEventListener("load", function() {
+applyTajweedPreference();
+});
+document.addEventListener("DOMContentLoaded", function () {
+    var defaultReciter = "sa";
+    var reciterMap = {
+        "Saad Al-Ghamdi": "sa",
+        "Abdul Rahman Al-Sudais": "ar",
+        "Abu Bakr Al-Shatri": "ab",
+        "Maher Al-Muaiqly": "ma",
+        "Saud Al-Shuraim": "ss",
+        "Ahmad Al-Ajmi": "aa",
+        "Fares Abbad": "fa"
+    };
+    if (!localStorage.getItem("selectedReciter")) {
+        localStorage.setItem("selectedReciter", defaultReciter);
+    }
+    function getReciterName(code) {
+        return Object.keys(reciterMap).find(key => reciterMap[key] === code);
+    }
+    function showReciterPlayButton(verseId) {
+        var selectedReciter = localStorage.getItem("selectedReciter");
+        for (var reciter in reciterMap) {
+            var reciterCode = reciterMap[reciter];
+            var playButton = document.getElementById(`play-${reciterCode}-${verseId}`);
+            if (playButton) {
+                playButton.classList.add("hidden");
+            }
+        }
+        var selectedPlayButton = document.getElementById(`play-${selectedReciter}-${verseId}`);
+        if (selectedPlayButton) {
+            selectedPlayButton.classList.remove("hidden");
+        }
+    }
+    function togglePlayPause(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+    var selectedReciterCode = localStorage.getItem("selectedReciter");
+    var audioElements = document.querySelectorAll("audio");
+    audioElements.forEach(function(audio) {
+        var verseId = audio.id.split('_')[0].replace('audio', '');
+        showReciterPlayButton(verseId);
+    });
+    document.getElementById("reciterIcon").addEventListener("click", function () {
+        var selectedReciter = getReciterName(localStorage.getItem("selectedReciter"));
+        var optionsHtml = '';
+        for (var reciter in reciterMap) {
+            var isSelected = reciter === selectedReciter ? 'selected' : '';
+            optionsHtml += `<option value="${reciter}" ${isSelected}>${reciter}</option>`;
+        }
+        Swal.fire({
+            html: `<h3 style="font-size: 30px;font-weight: bold;">Select Reciter</h3><br />
+                <select class="w3-btn w3-black-white w3-round-large w3-border-3" id="reciterSelect" style="margin-right: 5px; cursor: pointer;">
+                    ${optionsHtml}
+                </select>
+            `,
+            showCancelButton: true,
+            confirmButtonText: 'Select',
+            preConfirm: () => {
+                var reciterSelect = document.getElementById("reciterSelect");
+                var selectedReciter = reciterSelect.value;
+                var reciterCode = reciterMap[selectedReciter];
+                localStorage.setItem("selectedReciter", reciterCode);
+                return reciterCode;
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                var selectedReciterCode = result.value;
+                audioElements.forEach(function(audio) {
+                    var verseId = audio.id.split('_')[0].replace('audio', '');
+                    showReciterPlayButton(verseId);
+                });
+                Swal.fire({html: '<h3>Selected Reciter: ' + getReciterName(selectedReciterCode) + '</h3>'});
+            }
+        });
+    });
+});
+document.getElementById('menuIcon').addEventListener('click', function() {
+    document.getElementById('menuContainer').classList.toggle('show');
+});
+document.getElementById('menuIcon').addEventListener('click', function(event) {
+    event.stopPropagation();
+    document.getElementById('menuContainer').classList.toggle('show');
+});
+document.addEventListener('click', function(event) {
+    const menuContainer = document.getElementById('menuContainer');
+    if (!menuContainer.contains(event.target) && !event.target.matches('#menuIcon')) {
+        menuContainer.classList.remove('show');
+    }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const openModalButtons = document.querySelectorAll('.myBtn_multi');
+    const modals = document.querySelectorAll('.modal_multi');
+    const closeModalButtons = document.querySelectorAll('.close_multi');
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-verse').replace(':', '-');
+            const modal = document.getElementById(`modal-${modalId}`);
+            if (modal) {
+                modal.classList.add('show');
+                document.body.classList.add('modal-open');
+            }
+        });
+    });
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            if (modal) {
+                modal.classList.remove('show');
+                document.body.classList.remove('modal-open');
+            }
+        });
+    });
+    window.addEventListener('click', function(event) {
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+                document.body.classList.remove('modal-open');
+            }
+        });
+    });
 });
