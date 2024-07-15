@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../dist/images/icon.png"/>
     <link rel="stylesheet" href="../dist/css/style.css">
+    <script src="../dist/js/themecolor.js"></script>
     <script src="../dist/js/scrollreveal.min.js"></script>
     <title>Page 1 | Quran-Web3.NFT</title>
 </head>
@@ -32,36 +33,6 @@
                 </li>
             </ul>
 
-            <div class="menu-container unselectable w3-border w3-round-large w3-animate-zoom" id="menuContainer">
-                <div class="menu-item" style="margin-top: -10px;margin-left: 15px;margin-bottom: 40px;" onclick="toggleTheme()">
-                    <div class="lights-toggle">
-                        <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch">
-                        <label for="lights-toggle" class="text-xs">
-                            <span><span></span></span>
-                        </label>
-                    </div>
-                </div>
-                <script src="../dist/js/themecolor.js"></script>
-                <div class="menu-item w3-border w3-round-large">
-                    <div class="menu-item-title">Font Size</div>
-                    <div class="font-size-container">
-                        <span class="font-size-option" style="font-size: 20px;" onclick="zoomOut()"><i class="fa-solid fa-circle-minus"></i></span>
-                        <span class="font-size-option" style="font-size: 28px;" onclick="resetSize()"><i class="fa-solid fa-rotate"></i></span>
-                        <span class="font-size-option" style="font-size: 32px;" onclick="zoomIn()"><i class="fa-solid fa-circle-plus"></i></span>
-                    </div>
-                </div>
-                <div class="menu-item w3-border w3-round-large">
-                    <label for="tajweedToggle">
-                        <input class="w3-check cursor-pointer" type="checkbox" id="tajweedToggle" onchange="toggleTajweed()">
-                        <span class="cursor-pointer">Tajweed</span>
-                    </label>
-                </div>
-                <div class="menu-item w3-border w3-round-large" id="reciterIcon">
-                    <i class="fa-regular fa-user"></i>
-                    <span>Reciter</span>
-                </div>
-            </div>
-    
                 <div class="container">
 
                     <h3 id="1" class="text-center frame" style="font-size: 50px;font-family: surah;">001surah</h3>
@@ -604,16 +575,53 @@
             </div>
         </main>
         <ul class="w3-navbar w3-xlarge w3-black">
-            <li><a href="../"><span class="w3-centered" title="quran-web3.nft"><i class="fa-solid fa-book-quran"></i> Quran-Web3.NFT</span></a></li>
+            <li><a href="../"><span class="w3-centered" data-title="quran-web3.nft"><i class="fa-solid fa-book-quran"></i> Quran-Web3.NFT</span></a></li>
             <li style="float:right"><a href="../donate.html"><span class="w3-center" data-title="Donate">Donate</span></a></li>
             <li style="float:right;"><a href="../about.html"><span class="w3-center" data-title="About">About</span></a></li>
         </ul>
 
     </div>
+    <div class="menu-container unselectable w3-border w3-round-large w3-animate-zoom" id="menuContainer">
+        <div class="menu-item" style="margin-top: -10px;margin-left: 15px;margin-bottom: 40px;" onclick="toggleTheme()">
+            <div class="lights-toggle">
+                <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch">
+                <label for="lights-toggle" class="text-xs">
+                    <span><span></span></span>
+                </label>
+            </div>
+        </div>
+        <div class="menu-item w3-border w3-round-large">
+            <div class="menu-item-title">Font Size</div>
+            <div class="font-size-container">
+                <span class="font-size-option" style="font-size: 20px;" onclick="zoomOut()"><i class="fa-solid fa-circle-minus"></i></span>
+                <span class="font-size-option" style="font-size: 28px;" onclick="resetSize()"><i class="fa-solid fa-rotate"></i></span>
+                <span class="font-size-option" style="font-size: 32px;" onclick="zoomIn()"><i class="fa-solid fa-circle-plus"></i></span>
+            </div>
+        </div>
+        <div class="menu-item w3-border w3-round-large">
+            <label for="tajweedToggle">
+                <input class="w3-check cursor-pointer" type="checkbox" id="tajweedToggle" onchange="toggleTajweed()">
+                <span class="cursor-pointer">Tajweed</span>
+            </label>
+        </div>
+        <div class="menu-item w3-border w3-round-large" id="reciterIcon">
+            <i class="fa-regular fa-user"></i>
+            <span>Reciter</span>
+        </div>
+    </div>
     <script>
+        document.getElementById('menuIcon').addEventListener('click', function(event) {
+            event.stopPropagation();
+            document.getElementById('menuContainer').classList.toggle('show');
+        });
+        document.addEventListener('click', function(event) {
+            const menuContainer = document.getElementById('menuContainer');
+            if (!menuContainer.contains(event.target) && !event.target.matches('#menuIcon')) {
+                menuContainer.classList.remove('show');
+            }
+        });
         document.addEventListener("DOMContentLoaded", function() {
             var bookmarkButtons = document.querySelectorAll('.bookmark-btn');
-            
             bookmarkButtons.forEach(function(button) {
                 button.addEventListener('click', function() {
                     var verseId = this.getAttribute('data-id');
