@@ -128,7 +128,7 @@
                             <h4 class="translation french1" style="display: none;"><div id="fr-001001" class="fetch"></div></h4>
                             <h4 class="translation japanese1" style="display: none;"><div id="ja-001001" class="fetch"></div></h4>
                             <h4 class="translation indonesian" style="display: none;"><div id="id-001001" class="fetch"></div></h4>
-                        <span class="translation hide" style="display: none;"></span>
+                            <span class="translation hide" style="display: none;"></span>
                         </div>
                     </div>
 
@@ -629,6 +629,13 @@
                     updateBookmarkButton(this, verseId);
                 });
                 updateBookmarkButton(button, button.getAttribute('data-id'));
+            });
+            var verseContainers = document.querySelectorAll('.verse-container');
+            verseContainers.forEach(function(container) {
+                container.addEventListener('click', function() {
+                    var verseId = container.id;
+                    addRecentlyReadVerse(getPageNumber(), verseId);
+                });
             });
         });
     </script>
