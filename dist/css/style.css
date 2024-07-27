@@ -309,7 +309,7 @@ li a {display: inline-block;color: #eaf2f7;text-align: center;padding: 14px 16px
 .circle-container-inner-main {width: 40px;height: 40px;border-radius: 50%;display: flex;align-items: center;justify-content: center;text-align: center;font-size: 14px;font-weight: bold;overflow: hidden;white-space: nowrap;box-sizing: border-box;margin: 0;}
 .circle-container-inner {width: 30px;height: 30px;border-radius: 50%;display: flex;align-items: center;justify-content: center;text-align: center;font-size: 14px;font-weight: bold;overflow: hidden;white-space: nowrap;box-sizing: border-box;margin: 5px 0;}
 .content-container {flex: 1 1 calc(100% - 50px);padding-left: 15px;}
-@media (max-width: 768px) {.verse-container {flex-direction: column;}
+@media (max-width: 700px) {.verse-container {flex-direction: column;}
 .circle-container {flex-direction: row;justify-content: center;}
 .content-container {padding-left: 0;padding-top: 15px;}
 .circle-container-inner-main {margin: 5px;}
@@ -324,12 +324,12 @@ li a {display: inline-block;color: #eaf2f7;text-align: center;padding: 14px 16px
 .circle-container.open .hidden-circle:nth-child(4) {transform: translate(35px, 35px);}
 .tooltip {position: absolute;background-color: #333;color: #fff;padding: 4px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);white-space: nowrap;font-size: 14px;opacity: 0;visibility: hidden;transition: opacity 0.3s;z-index: 1;max-width: 150px;}
 .lights-off .tooltip {background-color: #fff;color: #333;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);}
-@media (min-width: 768px) {.tooltip {bottom: 50%;left: 100%;transform: translate(10px, 50%);}}
-@media (max-width: 767px) {.tooltip {bottom: 100%;left: 50%;transform: translateX(-50%);}}
+@media (min-width: 701px) {.tooltip {bottom: 50%;left: 100%;transform: translate(10px, 50%);}}
+@media (max-width: 700px) {.tooltip {bottom: 100%;left: 50%;transform: translateX(-50%);}}
 .circle-inner-main:hover .tooltip, .circle-inner:hover .tooltip {opacity: 1;visibility: visible;}
 .tooltip::after {content: '';position: absolute;width: 0;height: 0;border-style: solid;}
-@media (min-width: 768px) {.tooltip::after {border-width: 5px 5px 5px 0;border-color: transparent #333 transparent transparent;top: 50%;left: -5px;transform: translateY(-50%);}.lights-off .tooltip::after {border-width: 5px 5px 5px 0;border-color: transparent #fff transparent transparent;top: 50%;left: -5px;transform: translateY(-50%);}}
-@media (max-width: 767px) {.tooltip::after {border-width: 5px 5px 0 5px;border-color: #333 transparent transparent transparent;top: 100%;left: 50%;transform: translateX(-50%);}.lights-off .tooltip::after {border-width: 5px 5px 0 5px;border-color: #fff transparent transparent transparent;top: 100%;left: 50%;transform: translateX(-50%);}}
+@media (min-width: 701px) {.tooltip::after {border-width: 5px 5px 5px 0;border-color: transparent #333 transparent transparent;top: 50%;left: -5px;transform: translateY(-50%);}.lights-off .tooltip::after {border-width: 5px 5px 5px 0;border-color: transparent #fff transparent transparent;top: 50%;left: -5px;transform: translateY(-50%);}}
+@media (max-width: 700px) {.tooltip::after {border-width: 5px 5px 0 5px;border-color: #333 transparent transparent transparent;top: 100%;left: 50%;transform: translateX(-50%);}.lights-off .tooltip::after {border-width: 5px 5px 0 5px;border-color: #fff transparent transparent transparent;top: 100%;left: 50%;transform: translateX(-50%);}}
 .crypto-icon {width: 25px;height: 25px;border-radius: 50%;display: flex;justify-content: center;align-items: center;overflow: hidden;background-color: #ddd;}
 .crypto-icon img {width: 100%;height: auto;}
 .crypto-container {display: flex;align-items: center;}
